@@ -15,7 +15,7 @@
 [🌐 Live Application](https://ocean-embed-rho.vercel.app/landing) · [📊 Dataset Documentation](https://github.com/Saad-Shaikh095/TARAL/tree/main/Dataset_Documentation) · [📈 Latest Model Results](https://github.com/Saad-Shaikh095/TARAL/tree/main/Latest_Model_Research)
 
 <!-- Replace with your actual project banner -->
-![alt text](image-1.png)
+![alt text](Images\homepage.png)
 
 ---
 
