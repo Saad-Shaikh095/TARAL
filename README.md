@@ -16,7 +16,7 @@
 
 <!-- Replace with your actual project banner -->
 <p align="center">
-  <img src="C:\Users\SAAD SHAIKH\zoo\TARAL\Images\homepage.png" alt="TARAL Project Homepage" width="100%">
+  <img src="Images\homepage.png" alt="TARAL Project Homepage" width="100%">
 </p>
 
 ---
