@@ -1,182 +1,280 @@
 # 🌊 TARAL — OceanEmbed
 
-**Thermal Analysis and Reconstruction using Deep Learning for Ocean Layers**
+### Thermal Analysis and Reconstruction using Deep Learning for Ocean Layers
 
-OceanEmbed-powered subsurface ocean intelligence for disaster analysis and warning support.
+**A scientific documentation and research repository for subsurface ocean temperature reconstruction, dataset provenance, model evaluation, data-quality audits, and reproducible research.**
 
-| Project detail | Information |
+[![SIH 2026](https://img.shields.io/badge/Smart%20India%20Hackathon-2026-orange)](#project-information)
+[![Problem Statement](https://img.shields.io/badge/PS-SIH26066-blue)](#project-information)
+[![Team](https://img.shields.io/badge/Team-Bharat%20Through%20Space-purple)](#team)
+
+**Team:** Bharat Through Space  
+**Team ID:** 165933  
+**Problem Statement:** SIH26066
+
+[🌐 Live Application](https://ocean-embed-rho.vercel.app/landing) · [📊 Dataset Documentation](https://github.com/Saad-Shaikh095/TARAL/tree/main/Dataset_Documentation) · [📈 Latest Model Results](https://github.com/Saad-Shaikh095/TARAL/tree/main/Latest_Model_Research)
+
+<!-- Replace with your actual project banner -->
+![alt text](image-1.png)
+
+---
+
+## 📑 Table of Contents
+
+1. [Project Information](#-project-information)
+2. [About This Repository](#-about-this-repository)
+3. [Project Overview](#-project-overview)
+4. [Problem Statement](#-problem-statement)
+5. [Scientific Approach](#-scientific-approach)
+6. [Study Region and Data Specifications](#-study-region-and-data-specifications)
+7. [Dataset Catalogue](#-dataset-catalogue)
+8. [Data Provenance and Acquisition](#-data-provenance-and-acquisition)
+9. [Data-Quality Audit Reports](#-data-quality-audit-reports)
+10. [Model Documentation](#-model-documentation)
+11. [Latest Model Results](#-latest-model-results)
+12. [Validation Methodology](#-validation-methodology)
+13. [Scripts and Research Utilities](#-scripts-and-research-utilities)
+14. [Figures and Visualizations](#-figures-and-visualizations)
+15. [Research References](#-research-references)
+16. [Repository Structure](#-repository-structure)
+17. [Reproducibility](#-reproducibility)
+18. [Limitations and Future Work](#-limitations-and-future-work)
+19. [Team](#-team)
+20. [Links and Resources](#-links-and-resources)
+21. [License and Data Usage](#-license-and-data-usage)
+
+---
+
+## 📌 Project Information
+
+| Field | Details |
 |---|---|
+| Project | TARAL — OceanEmbed |
+| Full form | Thermal Analysis and Reconstruction using Deep Learning for Ocean Layers |
 | Hackathon | Smart India Hackathon 2026 |
 | Problem Statement ID | SIH26066 |
-| Problem Statement | Satellite Embedding-Based Deep Learning Framework for Reconstruction of Subsurface Ocean Temperature from Surface Satellite Observations |
 | Theme | Disaster Management |
 | Category | Software |
 | Team | Bharat Through Space |
 | Team ID | 165933 |
+| Live application | [Open TARAL](https://ocean-embed-rho.vercel.app/landing) |
+| Repository purpose | Documentation, datasets, scripts, audits, and research results |
 
-<!-- Add your project banner here -->
-![TARAL Project Banner](assets/project-banner.png)
+## 📖 About This Repository
 
-[Live Demo](https://ocean-embed-rho.vercel.app/landing) · [GitHub Repository](YOUR_REPOSITORY_URL) · [Dataset Documentation](YOUR_DATASET_DOCS_URL)
+This repository serves as the **central documentation and research record for TARAL / OceanEmbed**.
 
----
+It is intended to preserve the scientific context, dataset information, data-quality findings, experiment records, evaluation results, and supporting research materials used throughout the project.
 
-## 📌 Table of Contents
+### What this repository contains
 
-1. Project Overview
-2. Problem Statement
-3. Proposed Solution
-4. Key Features
-5. System Architecture
-6. Data Sources
-7. Study Region
-8. Data Quality
-9. Deep Learning Framework
-10. Model Performance
-11. Dashboard
-12. Technology Stack
-13. Installation and Usage
-14. Applications and Impact
-15. Limitations and Future Scope
-16. Research References
-17. Team
-18. License
+- Dataset catalogues, source links, metadata, and acquisition records.
+- Data preparation and auditing scripts.
+- Data-quality and missingness reports.
+- Model architecture and configuration documentation.
+- Experiment logs, benchmark comparisons, and latest evaluation results.
+- Validation methodology, metrics, plots, and supporting evidence.
+- Scientific references and technical documentation.
+- Selected figures, reports, and research artifacts.
 
----
+### What this repository does not contain
 
-## 1. Project Overview
+- The complete frontend source code.
+- The complete backend source code.
+- The full deployed application implementation.
 
-TARAL is a software workflow built around OceanEmbed, a deep-learning framework designed to reconstruct subsurface ocean temperatures using surface observations and multiple oceanographic datasets.
+The user-facing application is hosted separately and can be accessed through the [TARAL live application](https://ocean-embed-rho.vercel.app/landing).
 
-The system aims to combine data acquisition, quality auditing, preprocessing, model inference, validation, and visualization in one reusable workflow.
+> **Repository principle:** Every reported statistic or model result should be traceable to its dataset, script, configuration, evaluation procedure, or supporting report wherever possible.
 
-**Primary objectives:**
-- Reconstruct temperature profiles across multiple ocean depths.
-- Integrate heterogeneous ocean datasets.
-- Handle missing data and land–ocean boundaries.
-- Evaluate reconstruction accuracy using defined validation procedures.
-- Visualize depth-resolved temperature information.
-- Explore anomaly analysis and downstream hazard decision support.
+## 🌊 Project Overview
 
-## 2. Problem Statement
+TARAL is the software and research initiative associated with OceanEmbed, a deep-learning approach for reconstructing subsurface ocean temperature from surface satellite observations and complementary oceanographic data.
 
-Surface satellite observations do not directly provide a complete temperature profile beneath the ocean surface. Subsurface temperature information is valuable for studying ocean stratification, thermal variability, circulation, and other ocean processes.
+The research workflow brings together multi-source ocean data, data-quality auditing, harmonization, feature preparation, deep-learning inference, validation, and scientific visualization.
 
-The project addresses the challenge of estimating subsurface temperature from surface observations while accounting for missing data, spatial and temporal differences, and limited in-situ measurements.
+The repository documents the evidence and methodology behind that workflow rather than serving as the complete application codebase.
 
-## 3. Proposed Solution
+### Primary objectives
 
-TARAL provides a workflow for:
+- Document the datasets used for subsurface temperature reconstruction.
+- Maintain traceable records of data sources, versions, and processing.
+- Identify missingness, coverage gaps, and data-quality issues.
+- Record model configurations and experiment results.
+- Evaluate temperature reconstruction using clearly defined metrics.
+- Provide reproducible figures, reports, and scripts for research review.
 
-1. Acquiring oceanographic datasets.
-2. Auditing coverage, missingness, and data integrity.
-3. Harmonizing datasets onto a common spatial and temporal framework.
-4. Preparing features and validity masks.
-5. Running the trained OceanEmbed model.
-6. Reconstructing subsurface temperatures.
-7. Comparing predictions with reference observations.
-8. Visualizing results through a dashboard.
+## 🎯 Problem Statement
 
-> Update this section to distinguish implemented capabilities from planned features.
+Satellite observations provide valuable information about ocean-surface conditions but do not directly reveal the full temperature structure beneath the surface.
 
-## 4. Key Features
+Reconstructing subsurface temperature is challenging because of:
 
-| Feature | Description |
-|---|---|
-| Automated data pipeline | Acquire, audit, harmonize, prepare, and infer. |
-| Multi-source data integration | Combine thermal, salinity, sea-level, current, wind, and terrain information. |
-| Missing-data handling | Use validity masks and Partial Convolution where implemented. |
-| Ocean-aware processing | Account for land–ocean boundaries. |
-| Depth-resolved reconstruction | Estimate temperature across multiple depths. |
-| Coordinate-based analysis | Inspect supported locations through TARAL. |
-| Model evaluation | Report defined validation metrics and depth-wise errors. |
-| Visualization | Present maps, profiles, and data-quality information. |
+- Sparse and unevenly distributed in-situ observations.
+- Missing data and incomplete spatial coverage.
+- Differences in the resolution and temporal coverage of source datasets.
+- Land–ocean boundaries and coastal data-quality issues.
+- The need to estimate temperature across multiple depth levels.
+- The need for reliable validation and transparent reporting.
 
-## 5. System Architecture
+TARAL / OceanEmbed investigates how multi-source oceanographic observations and deep-learning methods can support this reconstruction problem.
 
-<!-- Replace with the real architecture image -->
-![TARAL System Architecture](assets/architecture.png)
+## 🧪 Scientific Approach
+
+The documented research workflow follows these stages:
+
+1. **Data acquisition:** Identify and retrieve relevant oceanographic datasets.
+2. **Data auditing:** Examine missingness, coverage, metadata, and integrity.
+3. **Data harmonization:** Align datasets to the required spatial and temporal framework.
+4. **Feature preparation:** Prepare model inputs and validity masks.
+5. **Model inference:** Apply the configured, trained reconstruction model.
+6. **Evaluation:** Compare predictions with the selected reference observations.
+7. **Documentation:** Publish results, scripts, metrics, limitations, and supporting figures.
 
 ```mermaid
 flowchart TD
-    A[Oceanographic Datasets] --> B[Data Acquisition]
-    B --> C[Quality Audit]
-    C --> D[Data Harmonization]
-    D --> E[Feature Preparation]
-    E --> F[36-Channel Input]
-    F --> G[OceanEmbed Model]
-    G --> H[Subsurface Temperature Reconstruction]
-    H --> I[Validation and Diagnostics]
-    H --> J[TARAL Dashboard]
+    A[Scientific Data Sources] --> B[Acquisition Records]
+    B --> C[Data Quality Audits]
+    C --> D[Harmonization and Preparation]
+    D --> E[Model Inputs]
+    E --> F[OceanEmbed Inference]
+    F --> G[Temperature Reconstruction]
+    G --> H[Validation and Benchmarking]
+    H --> I[Reports and Figures]
+    I --> J[Research Documentation Repository]
+    G --> K[TARAL Web Application]
 ```
 
-## 6. Data Sources
+*This diagram describes the documented research workflow. Update it if the implemented pipeline differs.*
 
-| Dataset | Purpose |
-|---|---|
-| NOAA OISST v2.1 | Sea Surface Temperature |
-| NOAA OISSS v3.0 | Sea Surface Salinity |
-| Copernicus DUACS | Sea level and altimetry |
-| GlobCurrent | Ocean surface currents |
-| CCMP v3.1 | Surface winds |
-| OSCAR | Ocean currents and validation context |
-| GLORYS | Subsurface temperature training/reference field |
-| GEBCO | Bathymetry and ocean mask |
-| ARGO | In-situ observations and independent validation |
-| Ocean hazard data | Hazard context |
+## 🌍 Study Region and Data Specifications
 
-Dataset documentation: [NOAA](https://www.ncei.noaa.gov/), [Copernicus Marine](https://marine.copernicus.eu/), [GEBCO](https://www.gebco.net/), [ARGO](https://argo.ucsd.edu/).
-
-Add the exact product URLs, versions, access methods, licenses, and download dates used by the project.
-
-## 7. Study Region
-
-| Parameter | Value from project presentation |
+| Parameter | Value reported in the project presentation |
 |---|---|
 | Region | North Indian Ocean |
 | Latitude | 5°N–30°N |
 | Longitude | 45°E–105°E |
 | Spatial resolution | 0.25° |
 | Grid convention | Cell-centred |
-| Validation depths | 15 levels from 0–1000 m |
-| GLORYS training depths | 36 depth levels |
 | Canonical grid | 100 × 240 |
 | Data period | 2012–2024 |
 | Temporal frequency | Daily, as described in the presentation |
+| Validation depths | 15 levels from 0–1000 m |
+| GLORYS training depths | 36 levels |
 
-![Study Region](assets/study-region.png)
+These are presentation-reported specifications. Refer to the dataset metadata and processing configuration for the authoritative values used in each experiment.
 
-Verify these specifications against the actual dataset metadata and preprocessing configuration.
+![North Indian Ocean Study Region](assets/study-region.png)
 
-## 8. Data Quality
+## 🗂️ Dataset Catalogue
 
-The presentation reports the following data-quality statistics:
+The catalogue below summarizes the sources identified in the project presentation. Link each entry to a detailed record in the repository.
 
-| Measure | Reported value |
+| Dataset | Scientific variable or purpose | Documentation |
+|---|---|---|
+| NOAA OISST v2.1 | Sea Surface Temperature | [Official documentation](https://www.ncei.noaa.gov/products/optimum-interpolation-sst) |
+| NOAA OISSS v3.0 | Sea Surface Salinity | [Add exact product link](YOUR_OISSS_URL) |
+| Copernicus DUACS | Sea-level and altimetry information | [Copernicus Marine](https://marine.copernicus.eu/) |
+| GlobCurrent | Ocean surface-current information | [Add exact product link](YOUR_GLOBCURRENT_URL) |
+| CCMP v3.1 | Surface wind information | [Add exact product link](YOUR_CCMP_URL) |
+| OSCAR | Ocean surface currents | [NASA PO.DAAC](https://podaac.jpl.nasa.gov/) |
+| GLORYS | Ocean reanalysis and subsurface reference fields | [Copernicus Marine](https://marine.copernicus.eu/) |
+| GEBCO | Bathymetry and ocean-floor elevation | [GEBCO](https://www.gebco.net/) |
+| ARGO | In-situ ocean profile observations | [ARGO Program](https://argo.ucsd.edu/) |
+| Ocean hazard datasets | Additional environmental or hazard context | [Add exact source](YOUR_HAZARD_DATA_URL) |
+
+### Dataset documentation standard
+
+Each dataset should have a dedicated record describing:
+
+- Dataset name and provider.
+- Exact product identifier and version.
+- Variables used.
+- Spatial and temporal coverage.
+- Native and target resolution.
+- Units, coordinate system, and depth convention.
+- Acquisition method and retrieval date.
+- Missing-value conventions.
+- Processing and harmonization steps.
+- License, access restrictions, and citation requirements.
+- File inventory and checksums, where available.
+
+**Dataset index:** [`docs/datasets/`](docs/datasets/)
+
+## 🔍 Data Provenance and Acquisition
+
+The provenance records should explain where each input came from and how it entered the research pipeline.
+
+| Field | Description |
+|---|---|
+| Source identifier | Official dataset or product name |
+| Version | Product version or release |
+| Retrieval date | Date the data was acquired |
+| Source URL | Official download or API endpoint |
+| Time range | Period represented by the downloaded data |
+| Spatial subset | Region and grid used |
+| Processing script | Script used to prepare or audit the data |
+| Output artifact | Processed file or report produced |
+| Checksum | Optional file-integrity identifier |
+| License | Applicable dataset usage conditions |
+
+**Acquisition logs:** [`docs/data-provenance/`](docs/data-provenance/)
+
+Do not commit credentials, access tokens, or restricted data. Large datasets can be referenced through their official providers or approved storage locations.
+
+## 🧾 Data-Quality Audit Reports
+
+The project presentation reports these initial missingness statistics:
+
+| Audit metric | Reported value |
 |---|---:|
 | OISSS missingness | 54.84% |
 | DUACS SLA missingness | 48.36% |
 | DUACS missing coverage associated with land | 98.60% |
+| ARGO files identified | 77,000+ |
+| OSCAR files audited | 4,749 |
 
-The auditing workflow considers coverage, missingness, integrity, land–ocean consistency, and grid compatibility.
+These values are historical, presentation-reported figures. Consult the corresponding audit report for the exact date range, denominator, spatial mask, and calculation method.
 
-Document the calculation method, denominator, date range, and masks used for each statistic.
+### Audit categories
 
-## 9. Deep Learning Framework
+- Data completeness and missingness.
+- Spatial and temporal coverage.
+- Coordinate and grid consistency.
+- Metadata and unit consistency.
+- File integrity and duplicate detection.
+- Land–ocean mask consistency.
+- Invalid values and unexpected ranges.
 
-### Models and methods
+### Audit report index
 
-| Component | Purpose |
+| Report | Purpose | Link |
+|---|---|---|
+| Missingness report | Quantifies missing values | [`reports/audits/missingness/`](reports/audits/missingness/) |
+| Spatial coverage report | Examines geographic coverage | [`reports/audits/spatial-coverage/`](reports/audits/spatial-coverage/) |
+| Data integrity report | Records file and metadata checks | [`reports/audits/integrity/`](reports/audits/integrity/) |
+| Land–ocean audit | Evaluates mask consistency | [`reports/audits/land-ocean/`](reports/audits/land-ocean/) |
+| Dataset inventory | Lists files and source metadata | [`reports/audits/inventory/`](reports/audits/inventory/) |
+
+Replace these paths with the actual files and folders in the repository.
+
+## 🧠 Model Documentation
+
+This section records the model configurations and methodology used by the project.
+
+| Component | Documented role |
 |---|---|
-| ConvLSTM | Spatiotemporal temperature reconstruction |
+| ConvLSTM | Spatiotemporal reconstruction model |
 | CNN-LSTM | Alternative model architecture |
-| PartialConv | Missingness-aware convolution |
-| Depth-specific normalization | Target standardization |
-| Baselines B1–B9 | Controlled model benchmarking |
+| Partial Convolution | Missingness-aware convolution method |
+| Depth-specific normalization | Standardization of depth-resolved targets |
+| Baselines B1–B9 | Controlled benchmarking configurations |
 
-### 36-channel input contract
+### Input contract
 
-| Input group | Channels |
+The project presentation describes a 36-channel input representation.
+
+| Input group | Channel count |
 |---|---:|
 | Dynamic features | 24 |
 | Static features | 6 |
@@ -184,199 +282,205 @@ Document the calculation method, denominator, date range, and masks used for eac
 | Temporal features | 2 |
 | **Total** | **36** |
 
-The presentation also describes a 14-day input window. Add the exact feature names, channel order, tensor dimensions, mask conventions, and normalization procedure from the code.
+A 14-day input window is also described in the presentation.
 
-## 10. Model Performance
+The authoritative model documentation should specify the exact variable order, tensor dimensions, mask convention, normalization parameters, target depths, and model configuration used for each run.
 
-The presentation reports the following ConvLSTM results:
+**Model documentation:** [`docs/models/`](docs/models/)
 
-| Metric | Reported result |
+**Model configurations:** [`configs/`](configs/)
+
+## 📈 Latest Model Results
+
+The project presentation reports the following ConvLSTM validation metrics:
+
+| Metric | Reported value |
 |---|---:|
 | Validation RMSE | 0.704°C |
 | Pearson correlation | 0.919 |
 
-These values should be reproduced from the evaluation code before publication as verified results.
+These are presentation-reported values, not a claim that the latest experiment has independently reproduced them. The newest dated evaluation report should be treated as the source of truth.
 
-For reproducibility, document:
-- Training, validation, and test splits.
-- Reference dataset and independent validation source.
-- Number of valid samples.
-- Metric aggregation across locations and depths.
-- RMSE, MAE, bias, and correlation by depth.
-- Any unresolved discrepancies between evaluation reports.
+### Experiment history
 
-![Observed vs Predicted](assets/observed-vs-predicted.png)
+| Experiment ID | Model | Dataset/version | Evaluation split | RMSE | MAE | Pearson r | Report |
+|---|---|---|---|---:|---:|---:|---|
+| `EXP-001` | ConvLSTM | `[Version]` | `[Split]` | 0.704°C* | `[Add]` | 0.919* | `[Link report]` |
+| `EXP-002` | `[Model]` | `[Version]` | `[Split]` | `[Add]` | `[Add]` | `[Add]` | `[Link report]` |
+
+`*` Historical value reported in the project presentation; replace it with the verified result from the relevant experiment.
+
+### Result artifacts
+
+- Latest evaluation report: [`reports/results/latest/`](reports/results/latest/)
+- Historical benchmark results: [`reports/results/benchmarks/`](reports/results/benchmarks/)
+- Evaluation scripts: [`scripts/evaluation/`](scripts/evaluation/)
+- Result figures: [`assets/results/`](assets/results/)
+
+![Observed vs Predicted Temperature](assets/observed-vs-predicted.png)
 
 ![RMSE by Depth](assets/rmse-by-depth.png)
 
-## 11. TARAL Dashboard
+### Required experiment metadata
 
-TARAL is intended to connect data preparation and model inference with a user-facing visualization workflow.
+Every published result should identify:
 
-<!-- Replace the images below with actual application screenshots -->
-![Dashboard Overview](assets/dashboard-main.png)
+- Experiment ID and timestamp.
+- Model architecture and checkpoint version.
+- Dataset versions and preprocessing configuration.
+- Training, validation, and test split.
+- Evaluation target and independent validation source.
+- Number of valid observations.
+- Overall and depth-wise metrics.
+- Random seed and hardware, where applicable.
+- Script or notebook used to generate the result.
+- Known limitations and unresolved discrepancies.
 
-![Coordinate Selection](assets/dashboard-coordinates.png)
+## 🛠️ Scripts and Research Utilities
 
-![Temperature Profile](assets/dashboard-profile.png)
+This repository may contain standalone scripts and notebooks for data inspection, quality auditing, metadata extraction, evaluation, visualization, and reproducibility.
 
-Document the actual steps required to select a location, execute inference, view a depth profile, inspect quality flags, and export results.
-
-## 12. Technology Stack
-
-The presentation lists the following technologies. Confirm actual usage before finalizing this table.
-
-| Area | Technologies |
+| Directory | Intended contents |
 |---|---|
-| Programming | Python, JavaScript, TypeScript |
-| Data processing | NumPy, Pandas |
-| Machine learning | scikit-learn, TensorFlow, PyTorch |
-| Scientific data | netCDF |
-| Visualization | Plotly, Matplotlib, Seaborn |
-| Development | Jupyter, VS Code |
-| Training | Kaggle GPU |
-| Styling | CSS |
-| Version control | GitHub |
+| `scripts/acquisition/` | Dataset acquisition utilities and retrieval logs |
+| `scripts/audit/` | Missingness, integrity, coverage, and mask checks |
+| `scripts/preprocessing/` | Dataset harmonization and preprocessing utilities |
+| `scripts/evaluation/` | Metric calculation and validation routines |
+| `scripts/visualization/` | Plotting and report-generation scripts |
+| `notebooks/` | Exploratory analysis and research experiments |
 
-## 13. Installation and Usage
+These are suggested categories. Keep only folders and scripts that actually exist.
 
-> Replace these placeholders with commands verified against the repository.
+For each script, document its purpose, required inputs, expected outputs, dependencies, command-line arguments, and limitations. Do not include invented commands or imply that a script exists before it is committed.
 
-### Prerequisites
+## 🖼️ Figures and Visualizations
 
-- Python: `YOUR_SUPPORTED_VERSION`
-- Git
-- pip or conda
-- Required CPU/GPU environment
-- Dataset access configuration, if required
+The repository should preserve figures that explain the scientific method and support published results.
 
-### Clone the repository
+Recommended figures include:
 
-```bash
-git clone YOUR_REPOSITORY_URL
-cd YOUR_REPOSITORY_FOLDER
-```
+- Study-region and spatial-grid maps.
+- Dataset missingness and coverage maps.
+- Land–ocean mask visualizations.
+- Model architecture diagrams.
+- Observed-versus-predicted temperature plots.
+- RMSE and MAE by depth.
+- Regional validation maps.
+- Bay of Bengal and Arabian Sea case studies.
 
-### Create a virtual environment
+Every figure should include a descriptive caption, source or generation script, experiment ID where relevant, and the date it was generated.
 
-```bash
-python -m venv .venv
-```
+## 📚 Research References
 
-Activate on Windows:
+The presentation lists these author-year references. Verify their full bibliographic details before using them as formal citations.
 
-```bat
-.venv\Scripts\activate
-```
-
-Activate on macOS/Linux:
-
-```bash
-source .venv/bin/activate
-```
-
-### Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Configure the application
-
-```bash
-# Copy the example configuration and edit it as documented
-copy .env.example .env
-```
-
-Use `cp .env.example .env` on macOS/Linux. Never commit credentials or private API keys.
-
-### Run the application
-
-```bash
-YOUR_ACTUAL_APPLICATION_START_COMMAND
-```
-
-### Run model inference
-
-```bash
-YOUR_ACTUAL_INFERENCE_COMMAND
-```
-
-Replace the example commands with the actual scripts and supported arguments from the repository.
-
-## 14. Applications and Impact
-
-| Application | Potential value |
-|---|---|
-| Ocean monitoring | Depth-resolved thermal information |
-| Oceanographic research | Analysis of thermal structure and variability |
-| Disaster decision support | Additional environmental context for hazard analysis |
-| Maritime environmental assessment | Subsurface thermal and sound-speed context |
-| Fisheries and marine economy | Ocean-state information for research and decisions |
-| Reproducible science | Repeatable data contracts and controlled benchmarks |
-
-The project presentation includes illustrative estimates related to potential grid-depth predictions, global ARGO profiles, observing costs, and India's fisheries and marine economy. Cite the original sources and explain the assumptions before publishing those figures.
-
-**Important:** Temperature reconstruction and anomaly analysis should not be described as a standalone operational disaster-warning system without specific validation.
-
-## 15. Limitations and Future Scope
-
-Potential limitations include missing or unevenly distributed observations, regional differences in model accuracy, uncertainty at deeper levels, and differences between training targets and independent observations.
-
-Potential future work:
-- Improve independent validation.
-- Report depth-wise and regional error metrics.
-- Add uncertainty estimates and quality flags.
-- Evaluate additional model architectures.
-- Improve automated data monitoring.
-- Expand regional coverage after validation.
-- Integrate validated anomaly analysis into downstream workflows.
-
-Mark each item as planned, in progress, or completed according to the actual project status.
-
-## 16. Research References
-
-The presentation lists these research citations by author and year. Verify their exact titles, venues, and DOI/URLs before publication.
-
-| Citation listed | Topic |
+| Citation listed in the presentation | Topic |
 |---|---|
 | Shi et al. (2015) | ConvLSTM |
 | Liu et al. (2018) | Partial Convolution |
 | Wang et al. (2021) | Multisource subsurface temperature reconstruction |
-| Su et al. (2022) | ConvLSTM-based temperature reconstruction |
+| Su et al. (2022) | ConvLSTM-based reconstruction |
 | Li et al. (2025) | Vertical temperature-profile reconstruction |
 | Zhao et al. (2025) | Deep learning and physical guidance for temperature/salinity reconstruction |
 
-## 17. Links and Resources
+**Reference library:** [`docs/references/`](docs/references/)
 
-| Resource | URL |
-|---|---|
-| Live prototype | `YOUR_DEMO_URL` |
-| GitHub repository | `YOUR_REPOSITORY_URL` |
-| Dataset documentation | `YOUR_DATASET_DOCS_URL` |
-| Collected datasets | `YOUR_DATASET_STORAGE_URL` |
-| Demo video | `YOUR_VIDEO_URL` |
-| Presentation | `YOUR_PRESENTATION_URL` |
+Add the exact paper title, author list, publication venue, year, DOI, and official URL for each reference.
 
-## 18. Team
+## 📁 Repository Structure
+
+Suggested documentation-first structure:
+
+```text
+TARAL-OceanEmbed/
+├── README.md
+├── LICENSE
+├── CITATION.cff
+├── CHANGELOG.md
+├── assets/
+│   ├── project-banner.png
+│   ├── study-region.png
+│   └── results/
+├── docs/
+│   ├── datasets/
+│   ├── data-provenance/
+│   ├── models/
+│   ├── methodology/
+│   └── references/
+├── configs/
+│   └── README.md
+├── scripts/
+│   ├── acquisition/
+│   ├── audit/
+│   ├── preprocessing/
+│   ├── evaluation/
+│   └── visualization/
+├── notebooks/
+├── reports/
+│   ├── audits/
+│   ├── results/
+│   └── figures/
+└── data/
+    └── README.md
+```
+
+This is a proposed structure, not a claim about the current repository contents. Modify it to match the files you actually maintain.
+
+## 🔁 Reproducibility
+
+The repository aims to make the research process auditable and repeatable.
+
+For each experiment, preserve the relevant metadata, dataset versions, configuration, scripts, evaluation outputs, and figures.
+
+When large files or datasets cannot be hosted directly in GitHub, provide stable source links, checksums, access instructions, and clear version information.
+
+Avoid committing secrets, large generated artifacts without a clear reason, or third-party datasets whose licenses do not permit redistribution.
+
+## ⚠️ Limitations and Future Work
+
+Potential research directions include:
+
+- Improving independent validation against in-situ observations.
+- Reporting depth-wise and regional performance.
+- Documenting uncertainty and quality flags.
+- Resolving differences between reported evaluation metrics.
+- Improving data-quality monitoring and provenance tracking.
+- Expanding regional coverage only after appropriate validation.
+- Publishing reproducible benchmarks and case studies.
+
+Subsurface reconstruction estimates should not be treated as direct measurements at every grid cell. The system should not be described as a standalone operational disaster-warning system without dedicated validation.
+
+## 👥 Team
 
 **Bharat Through Space**  
-Smart India Hackathon 2026 · Team ID 165933 · Problem Statement 26066
+Smart India Hackathon 2026 · Team ID 165933 · Problem Statement SIH26066
 
-| Member | Role | Contributions | Profile |
-|---|---|---|---|
-| `Lalit Hire` | `Backend` | `Contribution` | `GitHub/LinkedIn` |
-| `Amit Joshi` | `Backend` | `Contribution` | `GitHub/LinkedIn` |
-| `Lochana Pawar` | `Backend` | `Contribution` | `GitHub/LinkedIn` |
-| `Saad Shaikh` | `Backend` | `Contribution` | `GitHub/LinkedIn` |
-| `Rushikesh Bhavar` | `Frontend` | `Contribution` | `GitHub/LinkedIn` |
-| `Akshata` | `Frontend` | `Contribution` | `GitHub/LinkedIn` |
+| Member | Responsibility | Profile |
+|---|---|---|
+| Lalit Hire | Backend | `[GitHub / LinkedIn]` |
+| Amit Joshi | Backend | `[GitHub / LinkedIn]` |
+| Lochana Pawar | Backend | `[GitHub / LinkedIn]` |
+| Saad Shaikh | Backend | `[GitHub / LinkedIn]` |
+| Rushikesh Bhavar | Frontend | `[GitHub / LinkedIn]` |
+| Akshata | Frontend | `[GitHub / LinkedIn]` |
 
-## License
+## 🔗 Links and Resources
 
-`Choose a license and add the corresponding LICENSE file.`
+| Resource | Link |
+|---|---|
+| Live TARAL application | [Open application](https://ocean-embed-rho.vercel.app/landing) |
+| GitHub documentation repository | `[Add repository URL]` |
+| Dataset documentation | `[Add documentation URL]` |
+| Latest model results | `[Add latest report URL]` |
+| Audit reports | `[Add audit index URL]` |
+| Research references | [`docs/references/`](docs/references/) |
+| Presentation | `[Add PPT/PDF URL]` |
 
-Check the terms of third-party datasets separately; a software license does not automatically cover external data.
+## 📄 License and Data Usage
+
+Choose a repository license and include the corresponding license file before claiming the project is distributed under that license.
+
+Third-party datasets may have separate access, citation, and redistribution terms. Follow the terms of each data provider, and do not assume that a software license applies to external datasets.
 
 ---
 
@@ -384,6 +488,6 @@ Check the terms of third-party datasets separately; a software license does not 
 
 **TARAL — Turning multi-source ocean observations into depth-resolved subsurface insight.**
 
-Smart India Hackathon 2026 · Bharat Through Space
+*Smart India Hackathon 2026 · Bharat Through Space*
 
 </div>
