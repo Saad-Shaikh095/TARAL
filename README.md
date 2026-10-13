@@ -369,8 +369,8 @@ Smart India Hackathon 2026 · Team ID 165933 · Problem Statement 26066
 | `Amit Joshi` | `Backend` | `Contribution` | `GitHub/LinkedIn` |
 | `Lochana Pawar` | `Backend` | `Contribution` | `GitHub/LinkedIn` |
 | `Saad Shaikh` | `Backend` | `Contribution` | `GitHub/LinkedIn` |
-| `` | `Frontend` | `Contribution` | `GitHub/LinkedIn` |
-| `Member 6` | `Frontend` | `Contribution` | `GitHub/LinkedIn` |
+| `Rushikesh Bhavar` | `Frontend` | `Contribution` | `GitHub/LinkedIn` |
+| `Akshata` | `Frontend` | `Contribution` | `GitHub/LinkedIn` |
 
 ## License
 
