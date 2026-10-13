@@ -15,7 +15,7 @@
 [🌐 Live Application](https://ocean-embed-rho.vercel.app/landing) · [📊 Dataset Documentation](https://github.com/Saad-Shaikh095/TARAL/tree/main/Dataset_Documentation) · [📈 Latest Model Results](https://github.com/Saad-Shaikh095/TARAL/tree/main/Latest_Model_Research)
 
 <!-- Replace with your actual project banner -->
-![TARAL Dashboard](Images\homepage.png)
+![TARAL Dashboard](C:\Users\SAAD SHAIKH\zoo\TARAL\Images\homepage.png)
 
 ---
 
@@ -469,11 +469,11 @@ Smart India Hackathon 2026 · Team ID 165933 · Problem Statement SIH26066
 | Resource | Link |
 |---|---|
 | Live TARAL application | [Open application](https://ocean-embed-rho.vercel.app/landing) |
-| GitHub documentation repository | `[Add repository URL]`(https://github.com/Saad-Shaikh095/TARAL/tree/main/Documentation) |
-| Dataset documentation | `[Add documentation URL]`(https://github.com/Saad-Shaikh095/TARAL/blob/main/Dataset%20Documentation) |
-| Latest model results | `[Add latest report URL]`(https://github.com/Saad-Shaikh095/TARAL/tree/main/Latest%20Model%20Result) |
-| Audit reports | `[Add audit index URL]`(https://github.com/Saad-Shaikh095/TARAL/tree/main/Audit_reports) |
-| Research references | [`docs/references/`](docs/references/) |
+| GitHub documentation repository | [Add repository URL](https://github.com/Saad-Shaikh095/TARAL/tree/main/Documentation) |
+| Dataset documentation | [Add documentation URL](https://github.com/Saad-Shaikh095/TARAL/blob/main/Dataset%20Documentation) |
+| Latest model results | [Add latest report URL](https://github.com/Saad-Shaikh095/TARAL/tree/main/Latest%20Model%20Result) |
+| Audit reports | [Add audit index URL](https://github.com/Saad-Shaikh095/TARAL/tree/main/Audit_reports) |
+| Research references | [docs/references/](docs/references/) |
 | Presentation | `[Add PPT/PDF URL]` |
 
 ## 📄 License and Data Usage
