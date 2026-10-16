@@ -313,7 +313,7 @@ These are presentation-reported values, not a claim that the latest experiment h
 `*` Historical value reported in the project presentation; replace it with the verified result from the relevant experiment.
 
 <p align="center">
-  <img src="Images\report.jpg" alt="Report" width="100%">
+  <img src="Images\report.png" alt="Report" width="100%">
 </p>
 
 ### Result artifacts
