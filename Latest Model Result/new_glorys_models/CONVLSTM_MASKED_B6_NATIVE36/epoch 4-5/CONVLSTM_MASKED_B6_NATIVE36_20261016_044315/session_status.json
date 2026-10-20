@@ -1,0 +1,14 @@
+{
+  "status": "PAUSED_AT_SESSION_LIMIT",
+  "reason": "Configured 11-hour wall-clock budget reached; exiting before Kaggle hard cutoff.",
+  "stage": "training",
+  "epoch": 6,
+  "epoch_complete": false,
+  "step_in_epoch": 854,
+  "global_step": 17229,
+  "best_epoch": 5,
+  "best_validation_rmse_C": 0.779109882643177,
+  "elapsed_hours": 11.0005,
+  "resume_instruction": "Attach this run output or publish latest_model.pt as a Kaggle dataset; the script auto-selects the most advanced Native36 checkpoint.",
+  "saved_utc": "2026-10-16T15:35:58.527377+00:00"
+}

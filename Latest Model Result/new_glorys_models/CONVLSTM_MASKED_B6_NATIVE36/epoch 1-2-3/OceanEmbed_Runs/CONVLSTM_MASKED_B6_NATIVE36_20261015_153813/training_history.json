@@ -1,0 +1,41 @@
+[
+  {
+    "epoch": 1,
+    "train_loss_all36_normalized_MSE": 0.734243270613765,
+    "val_RMSE_SIH15_C": 0.8313293145550706,
+    "val_MAE_SIH15_C": 0.5512058794192007,
+    "val_RMSE_skill_SIH15": 0.19158482723101677,
+    "val_ACC_mean_SIH15": 0.4641585738869997,
+    "best_val_RMSE_SIH15_C": 0.8313293145550706,
+    "best_epoch": 1,
+    "global_step": 3275,
+    "epoch_seconds": 17912.066431999207,
+    "completed_utc": "2026-10-08T13:54:21.233006+00:00"
+  },
+  {
+    "epoch": 2,
+    "train_loss_all36_normalized_MSE": 0.6713640198543781,
+    "val_RMSE_SIH15_C": 0.8349233730355953,
+    "val_MAE_SIH15_C": 0.5520823410432681,
+    "val_RMSE_skill_SIH15": 0.18808983270044355,
+    "val_ACC_mean_SIH15": 0.4811015750037571,
+    "best_val_RMSE_SIH15_C": 0.8313293145550706,
+    "best_epoch": 1,
+    "global_step": 6550,
+    "epoch_seconds": 18831.554930448532,
+    "completed_utc": "2026-10-15T20:52:19.926757+00:00"
+  },
+  {
+    "epoch": 3,
+    "train_loss_all36_normalized_MSE": 0.6472891681703903,
+    "val_RMSE_SIH15_C": 0.8002448843710651,
+    "val_MAE_SIH15_C": 0.5355878727574753,
+    "val_RMSE_skill_SIH15": 0.22181246934306875,
+    "val_ACC_mean_SIH15": 0.49338687509116114,
+    "best_val_RMSE_SIH15_C": 0.8002448843710651,
+    "best_epoch": 3,
+    "global_step": 9825,
+    "epoch_seconds": 18761.245896816254,
+    "completed_utc": "2026-10-16T02:05:01.189820+00:00"
+  }
+]

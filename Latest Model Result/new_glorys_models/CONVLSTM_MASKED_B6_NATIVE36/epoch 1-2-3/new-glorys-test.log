@@ -1,0 +1,564 @@
+[{"stream_name":"stderr","time":6.5010074,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.501051381,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.501058115,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.501062811,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.093785076,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.093827262,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.093833333,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.093837967,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":16.376322483,"data":"\n"}
+,{"stream_name":"stdout","time":16.37636172,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":16.376365528,"data":"OCEANEMBED B6-NATIVE36 REAL RUN\n"}
+,{"stream_name":"stdout","time":16.376367934,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":16.376370392,"data":"DATA ROOT       : /kaggle/input/datasets/lalithiray/oceanembed-modeldata-v1\n"}
+,{"stream_name":"stdout","time":16.376372692,"data":"TARGET ROOT     : /kaggle/input/datasets/lalithiray/oceanembed-modeldata-v1/target/processed\n"}
+,{"stream_name":"stdout","time":16.376375107,"data":"DEVICE          : cuda\n"}
+,{"stream_name":"stdout","time":16.376377217,"data":"INPUT           : [B,14,36,100,240]\n"}
+,{"stream_name":"stdout","time":16.376379367,"data":"TARGET          : [B,36,100,240]\n"}
+,{"stream_name":"stdout","time":16.376381465,"data":"TRAIN LOSS      : ALL 36 native GLORYS depths\n"}
+,{"stream_name":"stdout","time":16.376384088000002,"data":"VALIDATION      : ONLY 15 SIH depths\n"}
+,{"stream_name":"stdout","time":16.376386219,"data":"TEST            : ONLY 15 SIH depths\n"}
+,{"stream_name":"stdout","time":16.376388323,"data":"GLORYS files    : 156\n"}
+,{"stream_name":"stdout","time":16.37639042,"data":"\n"}
+,{"stream_name":"stdout","time":16.376392614,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":16.376394927,"data":"OPENING PREDICTOR DATASETS\n"}
+,{"stream_name":"stdout","time":16.376397102,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":18.144090669,"data":"DUACS/OISST         : {'time': 4749, 'latitude': 100, 'longitude': 240, 'zlev': 1}\n"}
+,{"stream_name":"stdout","time":18.144154832,"data":"OISSS/GlobCurrent   : {'time': 4749, 'latitude': 100, 'longitude': 240}\n"}
+,{"stream_name":"stdout","time":18.144161315,"data":"CCMP/OSCAR          : {'time': 4749, 'latitude': 100, 'longitude': 240}\n"}
+,{"stream_name":"stdout","time":18.144165372,"data":"GEBCO               : {'latitude': 100, 'longitude': 240}\n"}
+,{"stream_name":"stdout","time":18.144169352,"data":"DUACS/OISST         : 9 required variables OK\n"}
+,{"stream_name":"stdout","time":18.144173573,"data":"OISSS/GlobCurrent   : 8 required variables OK\n"}
+,{"stream_name":"stdout","time":18.144177636,"data":"CCMP/OSCAR          : 7 required variables OK\n"}
+,{"stream_name":"stdout","time":18.144205122,"data":"\n"}
+,{"stream_name":"stdout","time":18.144209401,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":18.144213036,"data":"BUILDING EXACT CALENDAR-DATE INDEXES\n"}
+,{"stream_name":"stdout","time":18.144216398,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":18.144219791,"data":"DUACS/OISST         : 4749 exact dates\n"}
+,{"stream_name":"stdout","time":18.144223205,"data":"OISSS/GlobCurrent   : 4749 exact dates\n"}
+,{"stream_name":"stdout","time":18.144226624,"data":"CCMP/OSCAR          : 4749 exact dates\n"}
+,{"stream_name":"stdout","time":18.144230332,"data":"\n"}
+,{"stream_name":"stdout","time":18.144234004,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":18.144237491,"data":"STATIC FEATURES + STRUCTURAL OCEAN MASK\n"}
+,{"stream_name":"stdout","time":18.144240927,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":18.144244858,"data":"Static raw shape : (6, 100, 240)\n"}
+,{"stream_name":"stdout","time":18.144248732,"data":"Ocean cells      : 12552/24000\n"}
+,{"stream_name":"stdout","time":18.14425268,"data":"Ocean fraction   : 0.5230\n"}
+,{"stream_name":"stdout","time":18.144256124,"data":"Latitude         : 5.125000 -\u003e 29.875000\n"}
+,{"stream_name":"stdout","time":18.144259836,"data":"Longitude        : 45.125000 -\u003e 104.875000\n"}
+,{"stream_name":"stdout","time":18.14426386,"data":"\n"}
+,{"stream_name":"stdout","time":18.144267371,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":18.144271096,"data":"NEW GLORYS INDEX + NATIVE DEPTH VALIDATION\n"}
+,{"stream_name":"stdout","time":18.144274486,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":18.144278465,"data":"Coverage          : 2012-01 -\u003e 2024-12 COMPLETE\n"}
+,{"stream_name":"stdout","time":27.683326734,"data":"Native depths     : 36\n"}
+,{"stream_name":"stdout","time":27.683423914,"data":"Depth range       : 0.494025 -\u003e 1062.439941 m\n"}
+,{"stream_name":"stdout","time":27.683430141,"data":"All 156 GLORYS depth schemas: PASS\n"}
+,{"stream_name":"stdout","time":27.683433867,"data":"\n"}
+,{"stream_name":"stdout","time":27.683437405,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":27.683441323,"data":"SIH 15 DEPTH -\u003e NATIVE 36 METRIC MAPPING\n"}
+,{"stream_name":"stdout","time":27.683444961,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":27.683448632,"data":"SIH    0.00 m -\u003e native[00]    0.4940 m | method=clamped_first_native\n"}
+,{"stream_name":"stdout","time":27.68345223,"data":"SIH    5.00 m -\u003e native[03]    3.8195 m + native[04]    5.0782 m | w_upper=0.937855 | method=linear_native_bracket\n"}
+,{"stream_name":"stdout","time":27.683455939,"data":"SIH   10.00 m -\u003e native[07]    9.5730 m + native[08]   11.4050 m | w_upper=0.233080 | method=linear_native_bracket\n"}
+,{"stream_name":"stdout","time":27.683459737,"data":"SIH   20.00 m -\u003e native[11]   18.4956 m + native[12]   21.5988 m | w_upper=0.484794 | method=linear_native_bracket\n"}
+,{"stream_name":"stdout","time":27.683479541,"data":"SIH   30.00 m -\u003e native[14]   29.4447 m + native[15]   34.4342 m | w_upper=0.111289 | method=linear_native_bracket\n"}
+,{"stream_name":"stdout","time":27.683484567,"data":"SIH   50.00 m -\u003e native[17]   47.3737 m + native[18]   55.7643 m | w_upper=0.313006 | method=linear_native_bracket\n"}
+,{"stream_name":"stdout","time":27.683488907,"data":"SIH   75.00 m -\u003e native[19]   65.8073 m + native[20]   77.8539 m | w_upper=0.763099 | method=linear_native_bracket\n"}
+,{"stream_name":"stdout","time":27.683493429,"data":"SIH  100.00 m -\u003e native[21]   92.3261 m + native[22]  109.7293 m | w_upper=0.440948 | method=linear_native_bracket\n"}
+,{"stream_name":"stdout","time":27.683496994,"data":"SIH  125.00 m -\u003e native[22]  109.7293 m + native[23]  130.6660 m | w_upper=0.729375 | method=linear_native_bracket\n"}
+,{"stream_name":"stdout","time":27.683500448,"data":"SIH  150.00 m -\u003e native[23]  130.6660 m + native[24]  155.8507 m | w_upper=0.767689 | method=linear_native_bracket\n"}
+,{"stream_name":"stdout","time":27.683504718000002,"data":"SIH  200.00 m -\u003e native[25]  186.1256 m + native[26]  222.4752 m | w_upper=0.381693 | method=linear_native_bracket\n"}
+,{"stream_name":"stdout","time":27.683508249,"data":"SIH  300.00 m -\u003e native[27]  266.0403 m + native[28]  318.1274 m | w_upper=0.651979 | method=linear_native_bracket\n"}
+,{"stream_name":"stdout","time":27.683512242,"data":"SIH  500.00 m -\u003e native[30]  453.9377 m + native[31]  541.0889 m | w_upper=0.528533 | method=linear_native_bracket\n"}
+,{"stream_name":"stdout","time":27.683516326,"data":"SIH  700.00 m -\u003e native[32]  643.5668 m + native[33]  763.3331 m | w_upper=0.471194 | method=linear_native_bracket\n"}
+,{"stream_name":"stdout","time":27.683520394,"data":"SIH 1000.00 m -\u003e native[34]  902.3393 m + native[35] 1062.4399 m | w_upper=0.609996 | method=linear_native_bracket\n"}
+,{"stream_name":"stdout","time":27.683524203,"data":"\n"}
+,{"stream_name":"stdout","time":27.683529577,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":27.683533295,"data":"FITTING TRAIN-ONLY 36-DEPTH TARGET NORMALIZATION\n"}
+,{"stream_name":"stdout","time":27.683536675,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":28.446727475,"data":"  processed   1/108 train months | elapsed=1.0s\n"}
+,{"stream_name":"stdout","time":39.983934742,"data":"  processed  12/108 train months | elapsed=12.5s\n"}
+,{"stream_name":"stdout","time":51.687077805,"data":"  processed  24/108 train months | elapsed=24.2s\n"}
+,{"stream_name":"stdout","time":63.288151773,"data":"  processed  36/108 train months | elapsed=35.8s\n"}
+,{"stream_name":"stdout","time":74.606087389,"data":"  processed  48/108 train months | elapsed=47.1s\n"}
+,{"stream_name":"stdout","time":85.668307318,"data":"  processed  60/108 train months | elapsed=58.2s\n"}
+,{"stream_name":"stdout","time":97.879848767,"data":"  processed  72/108 train months | elapsed=70.4s\n"}
+,{"stream_name":"stdout","time":109.518778381,"data":"  processed  84/108 train months | elapsed=82.0s\n"}
+,{"stream_name":"stdout","time":121.374438666,"data":"  processed  96/108 train months | elapsed=93.9s\n"}
+,{"stream_name":"stdout","time":133.664749718,"data":"  processed 108/108 train months | elapsed=106.2s\n"}
+,{"stream_name":"stdout","time":133.897605862,"data":"\n"}
+,{"stream_name":"stdout","time":133.897650321,"data":"Target mode : anomaly\n"}
+,{"stream_name":"stdout","time":133.897657459,"data":"Climatology : train-only monthly climatology\n"}
+,{"stream_name":"stdout","time":133.897676854,"data":"Normalization dates: 2012-01-01 -\u003e 2020-12-31\n"}
+,{"stream_name":"stdout","time":133.897681902,"data":"\n"}
+,{"stream_name":"stdout","time":133.89768552,"data":"Per-depth target anomaly std:\n"}
+,{"stream_name":"stdout","time":133.897689326,"data":"  depth[00]     0.494 m : std=0.668705 °C\n"}
+,{"stream_name":"stdout","time":133.897693917,"data":"  depth[01]     1.541 m : std=0.662770 °C\n"}
+,{"stream_name":"stdout","time":133.897697483,"data":"  depth[02]     2.646 m : std=0.661389 °C\n"}
+,{"stream_name":"stdout","time":133.897701195,"data":"  depth[03]     3.819 m : std=0.662200 °C\n"}
+,{"stream_name":"stdout","time":133.897704899,"data":"  depth[04]     5.078 m : std=0.664015 °C\n"}
+,{"stream_name":"stdout","time":133.897708712,"data":"  depth[05]     6.441 m : std=0.666492 °C\n"}
+,{"stream_name":"stdout","time":133.897712413,"data":"  depth[06]     7.930 m : std=0.664182 °C\n"}
+,{"stream_name":"stdout","time":133.897716112,"data":"  depth[07]     9.573 m : std=0.665683 °C\n"}
+,{"stream_name":"stdout","time":133.897719894,"data":"  depth[08]    11.405 m : std=0.667597 °C\n"}
+,{"stream_name":"stdout","time":133.897723671,"data":"  depth[09]    13.467 m : std=0.670953 °C\n"}
+,{"stream_name":"stdout","time":133.897727509,"data":"  depth[10]    15.810 m : std=0.677426 °C\n"}
+,{"stream_name":"stdout","time":133.897731455,"data":"  depth[11]    18.496 m : std=0.687115 °C\n"}
+,{"stream_name":"stdout","time":133.897735266,"data":"  depth[12]    21.599 m : std=0.701102 °C\n"}
+,{"stream_name":"stdout","time":133.897739279,"data":"  depth[13]    25.211 m : std=0.721197 °C\n"}
+,{"stream_name":"stdout","time":133.897743122,"data":"  depth[14]    29.445 m : std=0.750526 °C\n"}
+,{"stream_name":"stdout","time":133.897746945,"data":"  depth[15]    34.434 m : std=0.790403 °C\n"}
+,{"stream_name":"stdout","time":133.897750729,"data":"  depth[16]    40.344 m : std=0.846541 °C\n"}
+,{"stream_name":"stdout","time":133.897754495,"data":"  depth[17]    47.374 m : std=0.925767 °C\n"}
+,{"stream_name":"stdout","time":133.897758248,"data":"  depth[18]    55.764 m : std=1.036342 °C\n"}
+,{"stream_name":"stdout","time":133.897761988,"data":"  depth[19]    65.807 m : std=1.182119 °C\n"}
+,{"stream_name":"stdout","time":133.897765701,"data":"  depth[20]    77.854 m : std=1.348236 °C\n"}
+,{"stream_name":"stdout","time":133.897771541,"data":"  depth[21]    92.326 m : std=1.482050 °C\n"}
+,{"stream_name":"stdout","time":133.89777556,"data":"  depth[22]   109.729 m : std=1.503066 °C\n"}
+,{"stream_name":"stdout","time":133.897779318,"data":"  depth[23]   130.666 m : std=1.382526 °C\n"}
+,{"stream_name":"stdout","time":133.897783074,"data":"  depth[24]   155.851 m : std=1.162924 °C\n"}
+,{"stream_name":"stdout","time":133.897786719,"data":"  depth[25]   186.126 m : std=0.892825 °C\n"}
+,{"stream_name":"stdout","time":133.897790429,"data":"  depth[26]   222.475 m : std=0.654660 °C\n"}
+,{"stream_name":"stdout","time":133.897794101,"data":"  depth[27]   266.040 m : std=0.509397 °C\n"}
+,{"stream_name":"stdout","time":133.897797825,"data":"  depth[28]   318.127 m : std=0.431619 °C\n"}
+,{"stream_name":"stdout","time":133.897801689,"data":"  depth[29]   380.213 m : std=0.357324 °C\n"}
+,{"stream_name":"stdout","time":133.897805453,"data":"  depth[30]   453.938 m : std=0.318993 °C\n"}
+,{"stream_name":"stdout","time":133.897809179,"data":"  depth[31]   541.089 m : std=0.301876 °C\n"}
+,{"stream_name":"stdout","time":133.897813008,"data":"  depth[32]   643.567 m : std=0.306456 °C\n"}
+,{"stream_name":"stdout","time":133.897816861,"data":"  depth[33]   763.333 m : std=0.308872 °C\n"}
+,{"stream_name":"stdout","time":133.897825058,"data":"  depth[34]   902.339 m : std=0.313007 °C\n"}
+,{"stream_name":"stdout","time":133.897829158,"data":"  depth[35]  1062.440 m : std=0.307817 °C\n"}
+,{"stream_name":"stdout","time":134.067528037,"data":"\n"}
+,{"stream_name":"stdout","time":134.067575727,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":134.067582873,"data":"TEMPORAL SPLIT\n"}
+,{"stream_name":"stdout","time":134.067586742,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":134.067590579,"data":"Train normalization dates : 3288 (2012-01-01 -\u003e 2020-12-31)\n"}
+,{"stream_name":"stdout","time":134.067594805,"data":"Train model samples       : 3275 (2012-01-14 -\u003e 2020-12-31)\n"}
+,{"stream_name":"stdout","time":134.067598481,"data":"Validation samples        : 717 (2021-01-14 -\u003e 2022-12-31)\n"}
+,{"stream_name":"stdout","time":134.067602027,"data":"Test samples              : 718 (2023-01-14 -\u003e 2024-12-31)\n"}
+,{"stream_name":"stdout","time":134.067605541,"data":"Boundary policy           : input_within_split\n"}
+,{"stream_name":"stdout","time":135.612963484,"data":"\n"}
+,{"stream_name":"stdout","time":135.61299853,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":135.6130045,"data":"REAL B6-NATIVE36 MODEL\n"}
+,{"stream_name":"stdout","time":135.613008192,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":135.613011934,"data":"Model ID          : CONVLSTM_MASKED_B6_NATIVE36\n"}
+,{"stream_name":"stdout","time":135.613015478,"data":"Model version     : 6.0.0-native36\n"}
+,{"stream_name":"stdout","time":135.613019032,"data":"Trainable params  : 177,764\n"}
+,{"stream_name":"stdout","time":135.613022452,"data":"Total params      : 177,764\n"}
+,{"stream_name":"stdout","time":135.613025847,"data":"\n"}
+,{"stream_name":"stdout","time":135.61302922,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":135.613032922,"data":"REAL-DATA FORWARD PREFLIGHT\n"}
+,{"stream_name":"stdout","time":135.613036258,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":141.604189759,"data":"Target date       : 2012-01-14\n"}
+,{"stream_name":"stdout","time":141.604221515,"data":"Input             : (1, 14, 24, 100, 240)\n"}
+,{"stream_name":"stdout","time":141.604227684,"data":"Target            : (1, 36, 100, 240)\n"}
+,{"stream_name":"stdout","time":141.604232219,"data":"Loss mask         : (1, 36, 100, 240)\n"}
+,{"stream_name":"stdout","time":141.604237045,"data":"Valid target      : 45.95%\n"}
+,{"stream_name":"stdout","time":143.166157777,"data":"Forward output     : (1, 36, 100, 240)\n"}
+,{"stream_name":"stdout","time":143.166189827,"data":"Real B6 forward    : PASS\n"}
+,{"stream_name":"stdout","time":149.049898588,"data":"\n"}
+,{"stream_name":"stdout","time":149.049934041,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":149.049937946,"data":"RESUME\n"}
+,{"stream_name":"stdout","time":149.049940388,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":149.049953527,"data":"Checkpoint: /kaggle/input/datasets/lalithiray/epoch-1-new-glorys/latest_model.pt\n"}
+,{"stream_name":"stdout","time":149.049967153,"data":"Resuming at epoch 2\n"}
+,{"stream_name":"stdout","time":149.049971141,"data":"\n"}
+,{"stream_name":"stdout","time":149.049975027,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":149.049978982,"data":"TRAINING — ALL 36 NATIVE TARGET DEPTHS\n"}
+,{"stream_name":"stdout","time":149.049983668,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":149.049987589,"data":"Every eligible training date is used once per epoch.\n"}
+,{"stream_name":"stdout","time":149.049990936,"data":"Training target depths: ALL 36 native GLORYS levels.\n"}
+,{"stream_name":"stdout","time":149.049994232,"data":"Validation target depths: ONLY 15 SIH levels.\n"}
+,{"stream_name":"stdout","time":158.270412505,"data":"  epoch=02 | step=0001/3275 | date=2017-09-21 | loss_all36=0.662553 | elapsed=0.2m\n"}
+,{"stream_name":"stdout","time":305.62299289,"data":"  epoch=02 | step=0025/3275 | date=2013-07-03 | loss_all36=0.828453 | elapsed=2.6m\n"}
+,{"stream_name":"stdout","time":452.601062993,"data":"  epoch=02 | step=0050/3275 | date=2014-06-18 | loss_all36=0.584554 | elapsed=5.1m\n"}
+,{"stream_name":"stdout","time":584.568905916,"data":"  epoch=02 | step=0075/3275 | date=2012-04-17 | loss_all36=0.451040 | elapsed=7.3m\n"}
+,{"stream_name":"stdout","time":727.711855514,"data":"  epoch=02 | step=0100/3275 | date=2017-10-17 | loss_all36=0.640431 | elapsed=9.6m\n"}
+,{"stream_name":"stdout","time":867.219422593,"data":"  epoch=02 | step=0125/3275 | date=2016-02-27 | loss_all36=0.585676 | elapsed=12.0m\n"}
+,{"stream_name":"stdout","time":1007.634258366,"data":"  epoch=02 | step=0150/3275 | date=2017-05-04 | loss_all36=0.643327 | elapsed=14.3m\n"}
+,{"stream_name":"stdout","time":1146.85274934,"data":"  epoch=02 | step=0175/3275 | date=2012-11-14 | loss_all36=0.560746 | elapsed=16.6m\n"}
+,{"stream_name":"stdout","time":1282.53701793,"data":"  epoch=02 | step=0200/3275 | date=2020-07-17 | loss_all36=0.756184 | elapsed=18.9m\n"}
+,{"stream_name":"stdout","time":1415.888480549,"data":"  epoch=02 | step=0225/3275 | date=2013-05-21 | loss_all36=0.519806 | elapsed=21.1m\n"}
+,{"stream_name":"stdout","time":1553.746519951,"data":"  epoch=02 | step=0250/3275 | date=2015-10-22 | loss_all36=0.616083 | elapsed=23.4m\n"}
+,{"stream_name":"stdout","time":1694.224237788,"data":"  epoch=02 | step=0275/3275 | date=2013-10-08 | loss_all36=0.710404 | elapsed=25.8m\n"}
+,{"stream_name":"stdout","time":1833.076020331,"data":"  epoch=02 | step=0300/3275 | date=2015-10-07 | loss_all36=0.608688 | elapsed=28.1m\n"}
+,{"stream_name":"stdout","time":1970.310218034,"data":"  epoch=02 | step=0325/3275 | date=2020-12-12 | loss_all36=0.518954 | elapsed=30.4m\n"}
+,{"stream_name":"stdout","time":2109.14856828,"data":"  epoch=02 | step=0350/3275 | date=2018-09-03 | loss_all36=0.948204 | elapsed=32.7m\n"}
+,{"stream_name":"stdout","time":2239.81342231,"data":"  epoch=02 | step=0375/3275 | date=2017-03-24 | loss_all36=0.517206 | elapsed=34.8m\n"}
+,{"stream_name":"stdout","time":2380.065921341,"data":"  epoch=02 | step=0400/3275 | date=2018-07-04 | loss_all36=0.814462 | elapsed=37.2m\n"}
+,{"stream_name":"stdout","time":2516.587503755,"data":"  epoch=02 | step=0425/3275 | date=2018-10-15 | loss_all36=0.694463 | elapsed=39.5m\n"}
+,{"stream_name":"stdout","time":2654.387356827,"data":"  epoch=02 | step=0450/3275 | date=2018-04-23 | loss_all36=0.529636 | elapsed=41.8m\n"}
+,{"stream_name":"stdout","time":2796.476437872,"data":"  epoch=02 | step=0475/3275 | date=2019-12-20 | loss_all36=0.822302 | elapsed=44.1m\n"}
+,{"stream_name":"stdout","time":2939.705182048,"data":"  epoch=02 | step=0500/3275 | date=2014-10-09 | loss_all36=0.803783 | elapsed=46.5m\n"}
+,{"stream_name":"stdout","time":3079.828334122,"data":"  epoch=02 | step=0525/3275 | date=2018-04-28 | loss_all36=0.717695 | elapsed=48.8m\n"}
+,{"stream_name":"stdout","time":3216.725031583,"data":"  epoch=02 | step=0550/3275 | date=2020-07-01 | loss_all36=1.483102 | elapsed=51.1m\n"}
+,{"stream_name":"stdout","time":3356.607790266,"data":"  epoch=02 | step=0575/3275 | date=2013-12-28 | loss_all36=0.864332 | elapsed=53.5m\n"}
+,{"stream_name":"stdout","time":3498.533363944,"data":"  epoch=02 | step=0600/3275 | date=2019-10-21 | loss_all36=0.874353 | elapsed=55.8m\n"}
+,{"stream_name":"stdout","time":3641.309626079,"data":"  epoch=02 | step=0625/3275 | date=2020-09-23 | loss_all36=0.899021 | elapsed=58.2m\n"}
+,{"stream_name":"stdout","time":3779.466704304,"data":"  epoch=02 | step=0650/3275 | date=2014-11-17 | loss_all36=0.454656 | elapsed=60.5m\n"}
+,{"stream_name":"stdout","time":3916.605105803,"data":"  epoch=02 | step=0675/3275 | date=2016-04-03 | loss_all36=0.716860 | elapsed=62.8m\n"}
+,{"stream_name":"stdout","time":4057.744407124,"data":"  epoch=02 | step=0700/3275 | date=2018-10-20 | loss_all36=0.673838 | elapsed=65.1m\n"}
+,{"stream_name":"stdout","time":4199.269945856,"data":"  epoch=02 | step=0725/3275 | date=2013-03-25 | loss_all36=0.654225 | elapsed=67.5m\n"}
+,{"stream_name":"stdout","time":4339.591493198,"data":"  epoch=02 | step=0750/3275 | date=2017-12-24 | loss_all36=0.773341 | elapsed=69.8m\n"}
+,{"stream_name":"stdout","time":4472.960238281,"data":"  epoch=02 | step=0775/3275 | date=2020-04-27 | loss_all36=0.870071 | elapsed=72.1m\n"}
+,{"stream_name":"stdout","time":4613.55053877,"data":"  epoch=02 | step=0800/3275 | date=2014-05-22 | loss_all36=0.484117 | elapsed=74.4m\n"}
+,{"stream_name":"stdout","time":4755.788823076,"data":"  epoch=02 | step=0825/3275 | date=2020-09-21 | loss_all36=0.917366 | elapsed=76.8m\n"}
+,{"stream_name":"stdout","time":4888.414915203,"data":"  epoch=02 | step=0850/3275 | date=2020-03-20 | loss_all36=0.607585 | elapsed=79.0m\n"}
+,{"stream_name":"stdout","time":5025.956135907,"data":"  epoch=02 | step=0875/3275 | date=2020-10-09 | loss_all36=0.783191 | elapsed=81.3m\n"}
+,{"stream_name":"stdout","time":5158.128133906,"data":"  epoch=02 | step=0900/3275 | date=2020-01-25 | loss_all36=0.813283 | elapsed=83.5m\n"}
+,{"stream_name":"stdout","time":5295.16272591,"data":"  epoch=02 | step=0925/3275 | date=2016-03-16 | loss_all36=0.412683 | elapsed=85.8m\n"}
+,{"stream_name":"stdout","time":5435.023199067,"data":"  epoch=02 | step=0950/3275 | date=2020-03-18 | loss_all36=0.548312 | elapsed=88.1m\n"}
+,{"stream_name":"stdout","time":5577.363955724,"data":"  epoch=02 | step=0975/3275 | date=2015-07-01 | loss_all36=1.225244 | elapsed=90.5m\n"}
+,{"stream_name":"stdout","time":5720.157643317,"data":"  epoch=02 | step=1000/3275 | date=2020-12-16 | loss_all36=0.495443 | elapsed=92.9m\n"}
+,{"stream_name":"stdout","time":5862.435069854,"data":"  epoch=02 | step=1025/3275 | date=2014-04-11 | loss_all36=0.528790 | elapsed=95.2m\n"}
+,{"stream_name":"stdout","time":5997.705871522,"data":"  epoch=02 | step=1050/3275 | date=2019-12-26 | loss_all36=1.218597 | elapsed=97.5m\n"}
+,{"stream_name":"stdout","time":6138.17222796,"data":"  epoch=02 | step=1075/3275 | date=2017-10-30 | loss_all36=0.737333 | elapsed=99.8m\n"}
+,{"stream_name":"stdout","time":6279.331565637,"data":"  epoch=02 | step=1100/3275 | date=2012-05-19 | loss_all36=0.481113 | elapsed=102.2m\n"}
+,{"stream_name":"stdout","time":6421.827094578,"data":"  epoch=02 | step=1125/3275 | date=2014-01-16 | loss_all36=0.430048 | elapsed=104.5m\n"}
+,{"stream_name":"stdout","time":6564.385321224,"data":"  epoch=02 | step=1150/3275 | date=2020-02-06 | loss_all36=0.664768 | elapsed=106.9m\n"}
+,{"stream_name":"stdout","time":6702.298395576,"data":"  epoch=02 | step=1175/3275 | date=2019-06-18 | loss_all36=0.800170 | elapsed=109.2m\n"}
+,{"stream_name":"stdout","time":6844.267899519,"data":"  epoch=02 | step=1200/3275 | date=2016-12-11 | loss_all36=0.496574 | elapsed=111.6m\n"}
+,{"stream_name":"stdout","time":6981.458875134,"data":"  epoch=02 | step=1225/3275 | date=2017-05-18 | loss_all36=0.449967 | elapsed=113.9m\n"}
+,{"stream_name":"stdout","time":7122.292141604,"data":"  epoch=02 | step=1250/3275 | date=2017-01-31 | loss_all36=0.476648 | elapsed=116.2m\n"}
+,{"stream_name":"stdout","time":7258.643438579,"data":"  epoch=02 | step=1275/3275 | date=2017-01-30 | loss_all36=0.490368 | elapsed=118.5m\n"}
+,{"stream_name":"stdout","time":7394.518587613,"data":"  epoch=02 | step=1300/3275 | date=2018-11-23 | loss_all36=0.599084 | elapsed=120.8m\n"}
+,{"stream_name":"stdout","time":7536.68650351,"data":"  epoch=02 | step=1325/3275 | date=2013-07-01 | loss_all36=0.871971 | elapsed=123.1m\n"}
+,{"stream_name":"stdout","time":7678.914115575,"data":"  epoch=02 | step=1350/3275 | date=2013-02-11 | loss_all36=0.422812 | elapsed=125.5m\n"}
+,{"stream_name":"stdout","time":7819.595229818,"data":"  epoch=02 | step=1375/3275 | date=2018-10-29 | loss_all36=0.748885 | elapsed=127.8m\n"}
+,{"stream_name":"stdout","time":7962.82397101,"data":"  epoch=02 | step=1400/3275 | date=2013-09-01 | loss_all36=0.802648 | elapsed=130.2m\n"}
+,{"stream_name":"stdout","time":8105.318331103,"data":"  epoch=02 | step=1425/3275 | date=2015-11-15 | loss_all36=0.501979 | elapsed=132.6m\n"}
+,{"stream_name":"stdout","time":8245.920884704,"data":"  epoch=02 | step=1450/3275 | date=2012-03-21 | loss_all36=0.532002 | elapsed=135.0m\n"}
+,{"stream_name":"stdout","time":8387.942801888,"data":"  epoch=02 | step=1475/3275 | date=2012-11-16 | loss_all36=0.494760 | elapsed=137.3m\n"}
+,{"stream_name":"stdout","time":8525.495811531,"data":"  epoch=02 | step=1500/3275 | date=2018-05-19 | loss_all36=0.530650 | elapsed=139.6m\n"}
+,{"stream_name":"stdout","time":8662.265925738,"data":"  epoch=02 | step=1525/3275 | date=2012-02-14 | loss_all36=0.457977 | elapsed=141.9m\n"}
+,{"stream_name":"stdout","time":8802.744728609,"data":"  epoch=02 | step=1550/3275 | date=2017-10-10 | loss_all36=0.700373 | elapsed=144.2m\n"}
+,{"stream_name":"stdout","time":8942.167310741,"data":"  epoch=02 | step=1575/3275 | date=2013-05-10 | loss_all36=0.441961 | elapsed=146.6m\n"}
+,{"stream_name":"stdout","time":9079.419634979,"data":"  epoch=02 | step=1600/3275 | date=2017-06-06 | loss_all36=0.786751 | elapsed=148.8m\n"}
+,{"stream_name":"stdout","time":9215.211899211,"data":"  epoch=02 | step=1625/3275 | date=2018-09-09 | loss_all36=0.737867 | elapsed=151.1m\n"}
+,{"stream_name":"stdout","time":9357.781013347,"data":"  epoch=02 | step=1650/3275 | date=2016-08-30 | loss_all36=0.819852 | elapsed=153.5m\n"}
+,{"stream_name":"stdout","time":9502.523152306,"data":"  epoch=02 | step=1675/3275 | date=2016-08-06 | loss_all36=0.677448 | elapsed=155.9m\n"}
+,{"stream_name":"stdout","time":9655.870304463,"data":"  epoch=02 | step=1700/3275 | date=2014-09-29 | loss_all36=0.940441 | elapsed=158.4m\n"}
+,{"stream_name":"stdout","time":9803.357439601,"data":"  epoch=02 | step=1725/3275 | date=2016-07-08 | loss_all36=0.769975 | elapsed=160.9m\n"}
+,{"stream_name":"stdout","time":9947.046370332,"data":"  epoch=02 | step=1750/3275 | date=2013-02-12 | loss_all36=0.420376 | elapsed=163.3m\n"}
+,{"stream_name":"stdout","time":10087.116208946,"data":"  epoch=02 | step=1775/3275 | date=2013-04-12 | loss_all36=0.421523 | elapsed=165.6m\n"}
+,{"stream_name":"stdout","time":10230.289405993,"data":"  epoch=02 | step=1800/3275 | date=2015-01-02 | loss_all36=0.564269 | elapsed=168.0m\n"}
+,{"stream_name":"stdout","time":10371.79066639,"data":"  epoch=02 | step=1825/3275 | date=2012-08-18 | loss_all36=0.733711 | elapsed=170.4m\n"}
+,{"stream_name":"stdout","time":10506.581969238,"data":"  epoch=02 | step=1850/3275 | date=2020-02-15 | loss_all36=0.641863 | elapsed=172.6m\n"}
+,{"stream_name":"stdout","time":10634.042159808,"data":"  epoch=02 | step=1875/3275 | date=2018-11-17 | loss_all36=0.601493 | elapsed=174.8m\n"}
+,{"stream_name":"stdout","time":10774.713875338,"data":"  epoch=02 | step=1900/3275 | date=2014-02-02 | loss_all36=0.480691 | elapsed=177.1m\n"}
+,{"stream_name":"stdout","time":10915.862668403,"data":"  epoch=02 | step=1925/3275 | date=2015-06-23 | loss_all36=0.737929 | elapsed=179.4m\n"}
+,{"stream_name":"stdout","time":11051.345107026,"data":"  epoch=02 | step=1950/3275 | date=2020-12-04 | loss_all36=0.726884 | elapsed=181.7m\n"}
+,{"stream_name":"stdout","time":11190.939639571,"data":"  epoch=02 | step=1975/3275 | date=2018-03-31 | loss_all36=1.023347 | elapsed=184.0m\n"}
+,{"stream_name":"stdout","time":11329.371399293,"data":"  epoch=02 | step=2000/3275 | date=2019-08-17 | loss_all36=0.862259 | elapsed=186.3m\n"}
+,{"stream_name":"stdout","time":11471.926539205,"data":"  epoch=02 | step=2025/3275 | date=2016-01-09 | loss_all36=0.486530 | elapsed=188.7m\n"}
+,{"stream_name":"stdout","time":11607.814783686,"data":"  epoch=02 | step=2050/3275 | date=2018-06-01 | loss_all36=1.130425 | elapsed=191.0m\n"}
+,{"stream_name":"stdout","time":11745.953665144,"data":"  epoch=02 | step=2075/3275 | date=2017-12-30 | loss_all36=0.897818 | elapsed=193.3m\n"}
+,{"stream_name":"stdout","time":11888.114568735,"data":"  epoch=02 | step=2100/3275 | date=2015-08-19 | loss_all36=0.719929 | elapsed=195.7m\n"}
+,{"stream_name":"stdout","time":12029.383395697,"data":"  epoch=02 | step=2125/3275 | date=2015-02-02 | loss_all36=0.589638 | elapsed=198.0m\n"}
+,{"stream_name":"stdout","time":12172.533761284,"data":"  epoch=02 | step=2150/3275 | date=2017-08-03 | loss_all36=0.789517 | elapsed=200.4m\n"}
+,{"stream_name":"stdout","time":12309.553579679,"data":"  epoch=02 | step=2175/3275 | date=2012-01-20 | loss_all36=0.512539 | elapsed=202.7m\n"}
+,{"stream_name":"stdout","time":12449.869205087,"data":"  epoch=02 | step=2200/3275 | date=2018-12-14 | loss_all36=0.528090 | elapsed=205.0m\n"}
+,{"stream_name":"stdout","time":12594.098448015,"data":"  epoch=02 | step=2225/3275 | date=2019-05-07 | loss_all36=0.600238 | elapsed=207.4m\n"}
+,{"stream_name":"stdout","time":12735.730007313,"data":"  epoch=02 | step=2250/3275 | date=2014-06-21 | loss_all36=0.571778 | elapsed=209.8m\n"}
+,{"stream_name":"stdout","time":12874.806163406,"data":"  epoch=02 | step=2275/3275 | date=2012-02-16 | loss_all36=0.491575 | elapsed=212.1m\n"}
+,{"stream_name":"stdout","time":13016.70615845,"data":"  epoch=02 | step=2300/3275 | date=2016-12-10 | loss_all36=0.524209 | elapsed=214.5m\n"}
+,{"stream_name":"stdout","time":13157.559411024,"data":"  epoch=02 | step=2325/3275 | date=2017-03-06 | loss_all36=0.574545 | elapsed=216.8m\n"}
+,{"stream_name":"stdout","time":13294.381459444,"data":"  epoch=02 | step=2350/3275 | date=2012-03-25 | loss_all36=0.567400 | elapsed=219.1m\n"}
+,{"stream_name":"stdout","time":13437.751887599,"data":"  epoch=02 | step=2375/3275 | date=2017-05-05 | loss_all36=0.684705 | elapsed=221.5m\n"}
+,{"stream_name":"stdout","time":13577.607436216,"data":"  epoch=02 | step=2400/3275 | date=2015-10-16 | loss_all36=0.526106 | elapsed=223.8m\n"}
+,{"stream_name":"stdout","time":13713.316101832,"data":"  epoch=02 | step=2425/3275 | date=2019-11-13 | loss_all36=0.700763 | elapsed=226.1m\n"}
+,{"stream_name":"stdout","time":13846.563807033,"data":"  epoch=02 | step=2450/3275 | date=2013-04-10 | loss_all36=0.441798 | elapsed=228.3m\n"}
+,{"stream_name":"stdout","time":13986.016189757,"data":"  epoch=02 | step=2475/3275 | date=2012-01-19 | loss_all36=0.498306 | elapsed=230.6m\n"}
+,{"stream_name":"stdout","time":14120.810939794,"data":"  epoch=02 | step=2500/3275 | date=2016-10-08 | loss_all36=0.756820 | elapsed=232.9m\n"}
+,{"stream_name":"stdout","time":14261.566526659,"data":"  epoch=02 | step=2525/3275 | date=2012-06-06 | loss_all36=0.639467 | elapsed=235.2m\n"}
+,{"stream_name":"stdout","time":14401.522581585,"data":"  epoch=02 | step=2550/3275 | date=2020-03-26 | loss_all36=0.666399 | elapsed=237.5m\n"}
+,{"stream_name":"stdout","time":14542.302319423,"data":"  epoch=02 | step=2575/3275 | date=2013-06-01 | loss_all36=0.707520 | elapsed=239.9m\n"}
+,{"stream_name":"stdout","time":14685.346302861,"data":"  epoch=02 | step=2600/3275 | date=2018-04-08 | loss_all36=0.606502 | elapsed=242.3m\n"}
+,{"stream_name":"stdout","time":14827.961311138,"data":"  epoch=02 | step=2625/3275 | date=2017-08-01 | loss_all36=0.720384 | elapsed=244.7m\n"}
+,{"stream_name":"stdout","time":14964.747417932,"data":"  epoch=02 | step=2650/3275 | date=2019-02-05 | loss_all36=0.515260 | elapsed=246.9m\n"}
+,{"stream_name":"stdout","time":15103.035467326,"data":"  epoch=02 | step=2675/3275 | date=2016-10-22 | loss_all36=0.615990 | elapsed=249.2m\n"}
+,{"stream_name":"stdout","time":15241.765987796,"data":"  epoch=02 | step=2700/3275 | date=2016-08-20 | loss_all36=0.619226 | elapsed=251.5m\n"}
+,{"stream_name":"stdout","time":15375.313980833,"data":"  epoch=02 | step=2725/3275 | date=2015-07-20 | loss_all36=0.555547 | elapsed=253.8m\n"}
+,{"stream_name":"stdout","time":15511.473389458,"data":"  epoch=02 | step=2750/3275 | date=2012-11-28 | loss_all36=0.619028 | elapsed=256.0m\n"}
+,{"stream_name":"stdout","time":15652.569768873,"data":"  epoch=02 | step=2775/3275 | date=2016-09-05 | loss_all36=0.771635 | elapsed=258.4m\n"}
+,{"stream_name":"stdout","time":15796.654997646,"data":"  epoch=02 | step=2800/3275 | date=2015-06-22 | loss_all36=0.704695 | elapsed=260.8m\n"}
+,{"stream_name":"stdout","time":15941.422453188,"data":"  epoch=02 | step=2825/3275 | date=2014-03-12 | loss_all36=0.437916 | elapsed=263.2m\n"}
+,{"stream_name":"stdout","time":16083.482840865,"data":"  epoch=02 | step=2850/3275 | date=2014-05-13 | loss_all36=0.465292 | elapsed=265.6m\n"}
+,{"stream_name":"stdout","time":16227.121221938,"data":"  epoch=02 | step=2875/3275 | date=2013-01-16 | loss_all36=0.411774 | elapsed=268.0m\n"}
+,{"stream_name":"stdout","time":16366.730158929,"data":"  epoch=02 | step=2900/3275 | date=2016-01-18 | loss_all36=0.431652 | elapsed=270.3m\n"}
+,{"stream_name":"stdout","time":16507.028730753,"data":"  epoch=02 | step=2925/3275 | date=2013-12-02 | loss_all36=0.727247 | elapsed=272.6m\n"}
+,{"stream_name":"stdout","time":16645.739463007,"data":"  epoch=02 | step=2950/3275 | date=2019-11-28 | loss_all36=1.181167 | elapsed=274.9m\n"}
+,{"stream_name":"stdout","time":16783.480343609,"data":"  epoch=02 | step=2975/3275 | date=2017-01-09 | loss_all36=0.479750 | elapsed=277.2m\n"}
+,{"stream_name":"stdout","time":16924.311471445,"data":"  epoch=02 | step=3000/3275 | date=2016-11-05 | loss_all36=0.716332 | elapsed=279.6m\n"}
+,{"stream_name":"stdout","time":17067.529340883,"data":"  epoch=02 | step=3025/3275 | date=2019-02-14 | loss_all36=0.563507 | elapsed=282.0m\n"}
+,{"stream_name":"stdout","time":17211.567765033,"data":"  epoch=02 | step=3050/3275 | date=2012-02-03 | loss_all36=0.567662 | elapsed=284.4m\n"}
+,{"stream_name":"stdout","time":17347.687043894,"data":"  epoch=02 | step=3075/3275 | date=2013-04-20 | loss_all36=0.454940 | elapsed=286.6m\n"}
+,{"stream_name":"stdout","time":17487.284839056,"data":"  epoch=02 | step=3100/3275 | date=2013-07-13 | loss_all36=0.557870 | elapsed=289.0m\n"}
+,{"stream_name":"stdout","time":17617.643721383,"data":"  epoch=02 | step=3125/3275 | date=2012-10-07 | loss_all36=0.716673 | elapsed=291.1m\n"}
+,{"stream_name":"stdout","time":17756.399183276,"data":"  epoch=02 | step=3150/3275 | date=2015-04-30 | loss_all36=0.723903 | elapsed=293.5m\n"}
+,{"stream_name":"stdout","time":17896.033463539,"data":"  epoch=02 | step=3175/3275 | date=2018-05-10 | loss_all36=0.569271 | elapsed=295.8m\n"}
+,{"stream_name":"stdout","time":18035.060366158,"data":"  epoch=02 | step=3200/3275 | date=2018-08-26 | loss_all36=0.761294 | elapsed=298.1m\n"}
+,{"stream_name":"stdout","time":18173.267623555,"data":"  epoch=02 | step=3225/3275 | date=2017-05-17 | loss_all36=0.481861 | elapsed=300.4m\n"}
+,{"stream_name":"stdout","time":18312.742598602,"data":"  epoch=02 | step=3250/3275 | date=2020-08-16 | loss_all36=0.761948 | elapsed=302.7m\n"}
+,{"stream_name":"stdout","time":18450.197277261,"data":"  epoch=02 | step=3275/3275 | date=2016-08-13 | loss_all36=0.658148 | elapsed=305.0m\n"}
+,{"stream_name":"stdout","time":18456.295615828,"data":"  VAL      1/717 | elapsed=0.1m\n"}
+,{"stream_name":"stdout","time":18529.031943123,"data":"  VAL    100/717 | elapsed=1.3m\n"}
+,{"stream_name":"stdout","time":18602.615033661,"data":"  VAL    200/717 | elapsed=2.5m\n"}
+,{"stream_name":"stdout","time":18676.268806306,"data":"  VAL    300/717 | elapsed=3.8m\n"}
+,{"stream_name":"stdout","time":18749.415637591,"data":"  VAL    400/717 | elapsed=5.0m\n"}
+,{"stream_name":"stdout","time":18822.737651293,"data":"  VAL    500/717 | elapsed=6.2m\n"}
+,{"stream_name":"stdout","time":18896.20226701,"data":"  VAL    600/717 | elapsed=7.4m\n"}
+,{"stream_name":"stdout","time":18968.465458121,"data":"  VAL    700/717 | elapsed=8.6m\n"}
+,{"stream_name":"stdout","time":18980.456088407,"data":"  VAL    717/717 | elapsed=8.8m\n"}
+,{"stream_name":"stdout","time":18980.469614723,"data":"\n"}
+,{"stream_name":"stdout","time":18980.469640253,"data":"EPOCH 2 COMPLETE | train_loss_all36=0.671364 | val_RMSE_SIH15=0.834923 °C | skill=0.188090 | ACC=0.481102 | best_epoch=1 | best_RMSE=0.831329 °C | epoch_time=313.9 min | runtime=5.23 h\n"}
+,{"stream_name":"stdout","time":18986.315011928,"data":"  epoch=03 | step=0001/3275 | date=2014-07-21 | loss_all36=0.609830 | elapsed=0.1m\n"}
+,{"stream_name":"stdout","time":19121.558518813,"data":"  epoch=03 | step=0025/3275 | date=2014-09-15 | loss_all36=0.705227 | elapsed=2.4m\n"}
+,{"stream_name":"stdout","time":19264.335074235,"data":"  epoch=03 | step=0050/3275 | date=2014-05-15 | loss_all36=0.441763 | elapsed=4.7m\n"}
+,{"stream_name":"stdout","time":19405.583633314,"data":"  epoch=03 | step=0075/3275 | date=2013-09-09 | loss_all36=0.666319 | elapsed=7.1m\n"}
+,{"stream_name":"stdout","time":19549.424848817,"data":"  epoch=03 | step=0100/3275 | date=2015-05-04 | loss_all36=0.716502 | elapsed=9.5m\n"}
+,{"stream_name":"stdout","time":19688.755255686,"data":"  epoch=03 | step=0125/3275 | date=2017-04-23 | loss_all36=0.725365 | elapsed=11.8m\n"}
+,{"stream_name":"stdout","time":19832.015928026,"data":"  epoch=03 | step=0150/3275 | date=2018-02-05 | loss_all36=0.482102 | elapsed=14.2m\n"}
+,{"stream_name":"stdout","time":19975.733017472,"data":"  epoch=03 | step=0175/3275 | date=2018-09-30 | loss_all36=0.857681 | elapsed=16.6m\n"}
+,{"stream_name":"stdout","time":20121.236357277,"data":"  epoch=03 | step=0200/3275 | date=2014-05-17 | loss_all36=0.424380 | elapsed=19.0m\n"}
+,{"stream_name":"stdout","time":20264.840550889,"data":"  epoch=03 | step=0225/3275 | date=2020-08-18 | loss_all36=0.725089 | elapsed=21.4m\n"}
+,{"stream_name":"stdout","time":20404.479440908,"data":"  epoch=03 | step=0250/3275 | date=2014-12-06 | loss_all36=0.679539 | elapsed=23.7m\n"}
+,{"stream_name":"stdout","time":20544.559810656,"data":"  epoch=03 | step=0275/3275 | date=2018-08-05 | loss_all36=0.748147 | elapsed=26.1m\n"}
+,{"stream_name":"stdout","time":20681.16436703,"data":"  epoch=03 | step=0300/3275 | date=2017-11-27 | loss_all36=0.680346 | elapsed=28.3m\n"}
+,{"stream_name":"stdout","time":20822.007844484,"data":"  epoch=03 | step=0325/3275 | date=2017-05-10 | loss_all36=0.495473 | elapsed=30.7m\n"}
+,{"stream_name":"stdout","time":20964.014057952,"data":"  epoch=03 | step=0350/3275 | date=2016-02-08 | loss_all36=0.397386 | elapsed=33.1m\n"}
+,{"stream_name":"stdout","time":21105.620996858,"data":"  epoch=03 | step=0375/3275 | date=2020-06-10 | loss_all36=0.914219 | elapsed=35.4m\n"}
+,{"stream_name":"stdout","time":21247.460708369,"data":"  epoch=03 | step=0400/3275 | date=2015-07-18 | loss_all36=0.574165 | elapsed=37.8m\n"}
+,{"stream_name":"stdout","time":21389.365212147,"data":"  epoch=03 | step=0425/3275 | date=2014-07-11 | loss_all36=0.590367 | elapsed=40.1m\n"}
+,{"stream_name":"stdout","time":21527.772303126,"data":"  epoch=03 | step=0450/3275 | date=2015-06-28 | loss_all36=0.889851 | elapsed=42.5m\n"}
+,{"stream_name":"stdout","time":21667.206904794,"data":"  epoch=03 | step=0475/3275 | date=2014-02-02 | loss_all36=0.457250 | elapsed=44.8m\n"}
+,{"stream_name":"stdout","time":21806.144487377,"data":"  epoch=03 | step=0500/3275 | date=2017-06-09 | loss_all36=0.697246 | elapsed=47.1m\n"}
+,{"stream_name":"stdout","time":21947.391256037,"data":"  epoch=03 | step=0525/3275 | date=2020-10-10 | loss_all36=0.734872 | elapsed=49.4m\n"}
+,{"stream_name":"stdout","time":22081.925070737,"data":"  epoch=03 | step=0550/3275 | date=2019-02-01 | loss_all36=0.589310 | elapsed=51.7m\n"}
+,{"stream_name":"stdout","time":22221.689068378,"data":"  epoch=03 | step=0575/3275 | date=2020-03-07 | loss_all36=0.587184 | elapsed=54.0m\n"}
+,{"stream_name":"stdout","time":22362.246767929,"data":"  epoch=03 | step=0600/3275 | date=2017-11-09 | loss_all36=0.640714 | elapsed=56.4m\n"}
+,{"stream_name":"stdout","time":22502.18618458,"data":"  epoch=03 | step=0625/3275 | date=2020-05-10 | loss_all36=0.648266 | elapsed=58.7m\n"}
+,{"stream_name":"stdout","time":22640.818731062,"data":"  epoch=03 | step=0650/3275 | date=2018-03-12 | loss_all36=0.560408 | elapsed=61.0m\n"}
+,{"stream_name":"stdout","time":22773.641007759,"data":"  epoch=03 | step=0675/3275 | date=2018-01-12 | loss_all36=0.492960 | elapsed=63.2m\n"}
+,{"stream_name":"stdout","time":22903.835840186,"data":"  epoch=03 | step=0700/3275 | date=2020-10-19 | loss_all36=0.682823 | elapsed=65.4m\n"}
+,{"stream_name":"stdout","time":23039.075992596,"data":"  epoch=03 | step=0725/3275 | date=2019-01-18 | loss_all36=0.470198 | elapsed=67.6m\n"}
+,{"stream_name":"stdout","time":23173.332627939,"data":"  epoch=03 | step=0750/3275 | date=2020-01-17 | loss_all36=0.743453 | elapsed=69.9m\n"}
+,{"stream_name":"stdout","time":23312.238407904,"data":"  epoch=03 | step=0775/3275 | date=2014-01-22 | loss_all36=0.540111 | elapsed=72.2m\n"}
+,{"stream_name":"stdout","time":23449.813054472,"data":"  epoch=03 | step=0800/3275 | date=2018-03-19 | loss_all36=0.445658 | elapsed=74.5m\n"}
+,{"stream_name":"stdout","time":23586.543580722,"data":"  epoch=03 | step=0825/3275 | date=2012-02-08 | loss_all36=0.513164 | elapsed=76.8m\n"}
+,{"stream_name":"stdout","time":23727.173224819,"data":"  epoch=03 | step=0850/3275 | date=2012-04-14 | loss_all36=0.429234 | elapsed=79.1m\n"}
+,{"stream_name":"stdout","time":23867.206295985,"data":"  epoch=03 | step=0875/3275 | date=2012-10-23 | loss_all36=0.629246 | elapsed=81.4m\n"}
+,{"stream_name":"stdout","time":24007.915168481,"data":"  epoch=03 | step=0900/3275 | date=2017-01-13 | loss_all36=0.462285 | elapsed=83.8m\n"}
+,{"stream_name":"stdout","time":24148.518789482,"data":"  epoch=03 | step=0925/3275 | date=2012-09-12 | loss_all36=0.744931 | elapsed=86.1m\n"}
+,{"stream_name":"stdout","time":24288.605480883,"data":"  epoch=03 | step=0950/3275 | date=2015-06-20 | loss_all36=0.575815 | elapsed=88.5m\n"}
+,{"stream_name":"stdout","time":24428.086612651,"data":"  epoch=03 | step=0975/3275 | date=2016-01-17 | loss_all36=0.420268 | elapsed=90.8m\n"}
+,{"stream_name":"stdout","time":24569.684298298,"data":"  epoch=03 | step=1000/3275 | date=2017-12-12 | loss_all36=0.495592 | elapsed=93.2m\n"}
+,{"stream_name":"stdout","time":24707.209206312,"data":"  epoch=03 | step=1025/3275 | date=2016-01-19 | loss_all36=0.419267 | elapsed=95.4m\n"}
+,{"stream_name":"stdout","time":24845.372871364,"data":"  epoch=03 | step=1050/3275 | date=2018-04-03 | loss_all36=0.768837 | elapsed=97.7m\n"}
+,{"stream_name":"stdout","time":24987.168699323,"data":"  epoch=03 | step=1075/3275 | date=2016-05-15 | loss_all36=0.474763 | elapsed=100.1m\n"}
+,{"stream_name":"stdout","time":25127.076629617,"data":"  epoch=03 | step=1100/3275 | date=2016-08-01 | loss_all36=0.756256 | elapsed=102.4m\n"}
+,{"stream_name":"stdout","time":25259.845297365,"data":"  epoch=03 | step=1125/3275 | date=2015-05-23 | loss_all36=0.459333 | elapsed=104.7m\n"}
+,{"stream_name":"stdout","time":25403.126403377,"data":"  epoch=03 | step=1150/3275 | date=2017-12-13 | loss_all36=0.481512 | elapsed=107.0m\n"}
+,{"stream_name":"stdout","time":25540.483935431,"data":"  epoch=03 | step=1175/3275 | date=2013-07-05 | loss_all36=0.715889 | elapsed=109.3m\n"}
+,{"stream_name":"stdout","time":25682.483757337,"data":"  epoch=03 | step=1200/3275 | date=2013-06-09 | loss_all36=0.499876 | elapsed=111.7m\n"}
+,{"stream_name":"stdout","time":25820.457034332,"data":"  epoch=03 | step=1225/3275 | date=2014-04-27 | loss_all36=0.602531 | elapsed=114.0m\n"}
+,{"stream_name":"stdout","time":25960.53561855,"data":"  epoch=03 | step=1250/3275 | date=2020-04-03 | loss_all36=1.342368 | elapsed=116.3m\n"}
+,{"stream_name":"stdout","time":26102.805302767,"data":"  epoch=03 | step=1275/3275 | date=2020-06-28 | loss_all36=0.803562 | elapsed=118.7m\n"}
+,{"stream_name":"stdout","time":26241.932294147,"data":"  epoch=03 | step=1300/3275 | date=2012-03-06 | loss_all36=0.665971 | elapsed=121.0m\n"}
+,{"stream_name":"stdout","time":26378.567664468,"data":"  epoch=03 | step=1325/3275 | date=2018-04-20 | loss_all36=0.480501 | elapsed=123.3m\n"}
+,{"stream_name":"stdout","time":26515.703509481,"data":"  epoch=03 | step=1350/3275 | date=2019-08-26 | loss_all36=0.809226 | elapsed=125.6m\n"}
+,{"stream_name":"stdout","time":26649.952511443,"data":"  epoch=03 | step=1375/3275 | date=2017-07-10 | loss_all36=0.720969 | elapsed=127.8m\n"}
+,{"stream_name":"stdout","time":26789.71921912,"data":"  epoch=03 | step=1400/3275 | date=2012-01-19 | loss_all36=0.510506 | elapsed=130.2m\n"}
+,{"stream_name":"stdout","time":26928.079868611,"data":"  epoch=03 | step=1425/3275 | date=2016-09-09 | loss_all36=0.692261 | elapsed=132.5m\n"}
+,{"stream_name":"stdout","time":27067.587384161,"data":"  epoch=03 | step=1450/3275 | date=2015-01-01 | loss_all36=0.603881 | elapsed=134.8m\n"}
+,{"stream_name":"stdout","time":27207.11766937,"data":"  epoch=03 | step=1475/3275 | date=2019-05-13 | loss_all36=0.480653 | elapsed=137.1m\n"}
+,{"stream_name":"stdout","time":27345.948073167,"data":"  epoch=03 | step=1500/3275 | date=2016-02-19 | loss_all36=0.407442 | elapsed=139.4m\n"}
+,{"stream_name":"stdout","time":27484.932048049,"data":"  epoch=03 | step=1525/3275 | date=2020-10-04 | loss_all36=0.857558 | elapsed=141.7m\n"}
+,{"stream_name":"stdout","time":27620.404903687,"data":"  epoch=03 | step=1550/3275 | date=2016-05-18 | loss_all36=0.478985 | elapsed=144.0m\n"}
+,{"stream_name":"stdout","time":27759.894534089,"data":"  epoch=03 | step=1575/3275 | date=2015-05-08 | loss_all36=0.636789 | elapsed=146.3m\n"}
+,{"stream_name":"stdout","time":27898.38775001,"data":"  epoch=03 | step=1600/3275 | date=2020-09-03 | loss_all36=0.799894 | elapsed=148.6m\n"}
+,{"stream_name":"stdout","time":28037.520580234,"data":"  epoch=03 | step=1625/3275 | date=2016-12-30 | loss_all36=0.901407 | elapsed=151.0m\n"}
+,{"stream_name":"stdout","time":28170.885413888,"data":"  epoch=03 | step=1650/3275 | date=2015-08-14 | loss_all36=0.640989 | elapsed=153.2m\n"}
+,{"stream_name":"stdout","time":28304.713432314,"data":"  epoch=03 | step=1675/3275 | date=2013-08-19 | loss_all36=0.722119 | elapsed=155.4m\n"}
+,{"stream_name":"stdout","time":28439.952075169,"data":"  epoch=03 | step=1700/3275 | date=2017-11-24 | loss_all36=0.560667 | elapsed=157.7m\n"}
+,{"stream_name":"stdout","time":28577.31167457,"data":"  epoch=03 | step=1725/3275 | date=2019-09-23 | loss_all36=0.744676 | elapsed=159.9m\n"}
+,{"stream_name":"stdout","time":28713.380835059,"data":"  epoch=03 | step=1750/3275 | date=2020-01-10 | loss_all36=0.764715 | elapsed=162.2m\n"}
+,{"stream_name":"stdout","time":28850.950467259,"data":"  epoch=03 | step=1775/3275 | date=2020-11-03 | loss_all36=0.801971 | elapsed=164.5m\n"}
+,{"stream_name":"stdout","time":28987.733543499,"data":"  epoch=03 | step=1800/3275 | date=2018-08-16 | loss_all36=0.796424 | elapsed=166.8m\n"}
+,{"stream_name":"stdout","time":29121.308255515,"data":"  epoch=03 | step=1825/3275 | date=2017-08-05 | loss_all36=0.685995 | elapsed=169.0m\n"}
+,{"stream_name":"stdout","time":29256.29714563,"data":"  epoch=03 | step=1850/3275 | date=2016-09-26 | loss_all36=0.653720 | elapsed=171.3m\n"}
+,{"stream_name":"stdout","time":29393.507521553,"data":"  epoch=03 | step=1875/3275 | date=2016-01-20 | loss_all36=0.447314 | elapsed=173.6m\n"}
+,{"stream_name":"stdout","time":29526.77574297,"data":"  epoch=03 | step=1900/3275 | date=2016-11-30 | loss_all36=0.710343 | elapsed=175.8m\n"}
+,{"stream_name":"stdout","time":29664.892427383,"data":"  epoch=03 | step=1925/3275 | date=2017-09-17 | loss_all36=0.643578 | elapsed=178.1m\n"}
+,{"stream_name":"stdout","time":29804.229147068,"data":"  epoch=03 | step=1950/3275 | date=2016-10-24 | loss_all36=0.595860 | elapsed=180.4m\n"}
+,{"stream_name":"stdout","time":29940.265824397,"data":"  epoch=03 | step=1975/3275 | date=2016-11-01 | loss_all36=0.875558 | elapsed=182.7m\n"}
+,{"stream_name":"stdout","time":30082.660862667,"data":"  epoch=03 | step=2000/3275 | date=2020-03-13 | loss_all36=0.576035 | elapsed=185.0m\n"}
+,{"stream_name":"stdout","time":30225.564498307,"data":"  epoch=03 | step=2025/3275 | date=2020-11-29 | loss_all36=0.810630 | elapsed=187.4m\n"}
+,{"stream_name":"stdout","time":30369.190826251,"data":"  epoch=03 | step=2050/3275 | date=2016-10-06 | loss_all36=0.834803 | elapsed=189.8m\n"}
+,{"stream_name":"stdout","time":30503.867278069,"data":"  epoch=03 | step=2075/3275 | date=2012-02-20 | loss_all36=0.415806 | elapsed=192.1m\n"}
+,{"stream_name":"stdout","time":30644.883427365,"data":"  epoch=03 | step=2100/3275 | date=2014-01-04 | loss_all36=0.515426 | elapsed=194.4m\n"}
+,{"stream_name":"stdout","time":30785.749973313,"data":"  epoch=03 | step=2125/3275 | date=2020-12-20 | loss_all36=0.532913 | elapsed=196.8m\n"}
+,{"stream_name":"stdout","time":30921.361575628,"data":"  epoch=03 | step=2150/3275 | date=2013-01-03 | loss_all36=0.579867 | elapsed=199.0m\n"}
+,{"stream_name":"stdout","time":31061.897799435,"data":"  epoch=03 | step=2175/3275 | date=2016-07-01 | loss_all36=0.887467 | elapsed=201.4m\n"}
+,{"stream_name":"stdout","time":31203.811208561,"data":"  epoch=03 | step=2200/3275 | date=2012-10-02 | loss_all36=0.871217 | elapsed=203.7m\n"}
+,{"stream_name":"stdout","time":31341.81393372,"data":"  epoch=03 | step=2225/3275 | date=2012-02-23 | loss_all36=0.432682 | elapsed=206.0m\n"}
+,{"stream_name":"stdout","time":31477.498268589,"data":"  epoch=03 | step=2250/3275 | date=2017-02-24 | loss_all36=0.516792 | elapsed=208.3m\n"}
+,{"stream_name":"stdout","time":31618.595779355,"data":"  epoch=03 | step=2275/3275 | date=2015-07-03 | loss_all36=1.048405 | elapsed=210.6m\n"}
+,{"stream_name":"stdout","time":31757.985205201,"data":"  epoch=03 | step=2300/3275 | date=2017-07-21 | loss_all36=0.687363 | elapsed=213.0m\n"}
+,{"stream_name":"stdout","time":31898.235180286,"data":"  epoch=03 | step=2325/3275 | date=2014-05-24 | loss_all36=0.515706 | elapsed=215.3m\n"}
+,{"stream_name":"stdout","time":32033.137302961,"data":"  epoch=03 | step=2350/3275 | date=2017-09-22 | loss_all36=0.632191 | elapsed=217.5m\n"}
+,{"stream_name":"stdout","time":32173.7360458,"data":"  epoch=03 | step=2375/3275 | date=2016-10-11 | loss_all36=0.648583 | elapsed=219.9m\n"}
+,{"stream_name":"stdout","time":32312.283615734,"data":"  epoch=03 | step=2400/3275 | date=2020-04-23 | loss_all36=0.653707 | elapsed=222.2m\n"}
+,{"stream_name":"stdout","time":32451.954091541,"data":"  epoch=03 | step=2425/3275 | date=2017-10-13 | loss_all36=0.578389 | elapsed=224.5m\n"}
+,{"stream_name":"stdout","time":32585.324616536,"data":"  epoch=03 | step=2450/3275 | date=2019-01-03 | loss_all36=0.694381 | elapsed=226.7m\n"}
+,{"stream_name":"stdout","time":32726.293261247,"data":"  epoch=03 | step=2475/3275 | date=2013-01-11 | loss_all36=0.381751 | elapsed=229.1m\n"}
+,{"stream_name":"stdout","time":32863.834617471,"data":"  epoch=03 | step=2500/3275 | date=2012-07-02 | loss_all36=1.102939 | elapsed=231.4m\n"}
+,{"stream_name":"stdout","time":33004.627987599,"data":"  epoch=03 | step=2525/3275 | date=2020-09-12 | loss_all36=0.806686 | elapsed=233.7m\n"}
+,{"stream_name":"stdout","time":33145.398640629,"data":"  epoch=03 | step=2550/3275 | date=2014-11-22 | loss_all36=0.488072 | elapsed=236.1m\n"}
+,{"stream_name":"stdout","time":33286.390474927,"data":"  epoch=03 | step=2575/3275 | date=2020-06-01 | loss_all36=1.203425 | elapsed=238.4m\n"}
+,{"stream_name":"stdout","time":33427.774589219,"data":"  epoch=03 | step=2600/3275 | date=2013-02-17 | loss_all36=0.416199 | elapsed=240.8m\n"}
+,{"stream_name":"stdout","time":33569.920830744,"data":"  epoch=03 | step=2625/3275 | date=2017-03-27 | loss_all36=0.515385 | elapsed=243.2m\n"}
+,{"stream_name":"stdout","time":33706.043515649,"data":"  epoch=03 | step=2650/3275 | date=2019-11-15 | loss_all36=0.692378 | elapsed=245.4m\n"}
+,{"stream_name":"stdout","time":33842.178486499,"data":"  epoch=03 | step=2675/3275 | date=2012-07-23 | loss_all36=0.681310 | elapsed=247.7m\n"}
+,{"stream_name":"stdout","time":33978.784302207,"data":"  epoch=03 | step=2700/3275 | date=2013-05-04 | loss_all36=0.580651 | elapsed=250.0m\n"}
+,{"stream_name":"stdout","time":34115.900589143,"data":"  epoch=03 | step=2725/3275 | date=2012-05-19 | loss_all36=0.458275 | elapsed=252.3m\n"}
+,{"stream_name":"stdout","time":34249.531573522,"data":"  epoch=03 | step=2750/3275 | date=2016-11-18 | loss_all36=0.460883 | elapsed=254.5m\n"}
+,{"stream_name":"stdout","time":34387.791506067,"data":"  epoch=03 | step=2775/3275 | date=2017-03-02 | loss_all36=0.650314 | elapsed=256.8m\n"}
+,{"stream_name":"stdout","time":34524.201692462,"data":"  epoch=03 | step=2800/3275 | date=2015-07-13 | loss_all36=0.612513 | elapsed=259.1m\n"}
+,{"stream_name":"stdout","time":34662.684399207,"data":"  epoch=03 | step=2825/3275 | date=2017-05-04 | loss_all36=0.635074 | elapsed=261.4m\n"}
+,{"stream_name":"stdout","time":34800.374839928,"data":"  epoch=03 | step=2850/3275 | date=2017-03-05 | loss_all36=0.557993 | elapsed=263.7m\n"}
+,{"stream_name":"stdout","time":34938.23492875,"data":"  epoch=03 | step=2875/3275 | date=2019-02-28 | loss_all36=0.646822 | elapsed=266.0m\n"}
+,{"stream_name":"stdout","time":35077.031394343,"data":"  epoch=03 | step=2900/3275 | date=2016-03-03 | loss_all36=0.485453 | elapsed=268.3m\n"}
+,{"stream_name":"stdout","time":35217.997334868,"data":"  epoch=03 | step=2925/3275 | date=2012-07-05 | loss_all36=0.886509 | elapsed=270.6m\n"}
+,{"stream_name":"stdout","time":35358.709584217,"data":"  epoch=03 | step=2950/3275 | date=2014-11-25 | loss_all36=0.551504 | elapsed=273.0m\n"}
+,{"stream_name":"stdout","time":35499.609052047,"data":"  epoch=03 | step=2975/3275 | date=2018-11-02 | loss_all36=0.818076 | elapsed=275.3m\n"}
+,{"stream_name":"stdout","time":35638.267070469,"data":"  epoch=03 | step=3000/3275 | date=2012-07-21 | loss_all36=0.630312 | elapsed=277.6m\n"}
+,{"stream_name":"stdout","time":35776.624103366,"data":"  epoch=03 | step=3025/3275 | date=2012-12-16 | loss_all36=0.428054 | elapsed=279.9m\n"}
+,{"stream_name":"stdout","time":35909.829751536,"data":"  epoch=03 | step=3050/3275 | date=2015-01-07 | loss_all36=0.463992 | elapsed=282.2m\n"}
+,{"stream_name":"stdout","time":36044.292476243,"data":"  epoch=03 | step=3075/3275 | date=2018-06-06 | loss_all36=0.692609 | elapsed=284.4m\n"}
+,{"stream_name":"stdout","time":36184.230150696,"data":"  epoch=03 | step=3100/3275 | date=2014-06-15 | loss_all36=0.544737 | elapsed=286.7m\n"}
+,{"stream_name":"stdout","time":36328.794785734,"data":"  epoch=03 | step=3125/3275 | date=2019-06-11 | loss_all36=0.717386 | elapsed=289.1m\n"}
+,{"stream_name":"stdout","time":36475.293705,"data":"  epoch=03 | step=3150/3275 | date=2017-11-07 | loss_all36=0.671572 | elapsed=291.6m\n"}
+,{"stream_name":"stdout","time":36621.679988478,"data":"  epoch=03 | step=3175/3275 | date=2015-08-09 | loss_all36=0.646967 | elapsed=294.0m\n"}
+,{"stream_name":"stdout","time":36769.647770757,"data":"  epoch=03 | step=3200/3275 | date=2019-01-10 | loss_all36=0.442879 | elapsed=296.5m\n"}
+,{"stream_name":"stdout","time":36916.756293213,"data":"  epoch=03 | step=3225/3275 | date=2016-05-16 | loss_all36=0.436516 | elapsed=298.9m\n"}
+,{"stream_name":"stdout","time":37062.192103906,"data":"  epoch=03 | step=3250/3275 | date=2020-07-25 | loss_all36=0.762414 | elapsed=301.4m\n"}
+,{"stream_name":"stdout","time":37207.718400094,"data":"  epoch=03 | step=3275/3275 | date=2015-01-31 | loss_all36=0.548364 | elapsed=303.8m\n"}
+,{"stream_name":"stdout","time":37213.676999276,"data":"  VAL      1/717 | elapsed=0.1m\n"}
+,{"stream_name":"stdout","time":37287.167519651,"data":"  VAL    100/717 | elapsed=1.3m\n"}
+,{"stream_name":"stdout","time":37361.909662679,"data":"  VAL    200/717 | elapsed=2.6m\n"}
+,{"stream_name":"stdout","time":37435.639025546,"data":"  VAL    300/717 | elapsed=3.8m\n"}
+,{"stream_name":"stdout","time":37508.684830345,"data":"  VAL    400/717 | elapsed=5.0m\n"}
+,{"stream_name":"stdout","time":37583.27446346,"data":"  VAL    500/717 | elapsed=6.3m\n"}
+,{"stream_name":"stdout","time":37657.398210235,"data":"  VAL    600/717 | elapsed=7.5m\n"}
+,{"stream_name":"stdout","time":37729.52565573,"data":"  VAL    700/717 | elapsed=8.7m\n"}
+,{"stream_name":"stdout","time":37741.725226529,"data":"  VAL    717/717 | elapsed=8.9m\n"}
+,{"stream_name":"stdout","time":37741.740339727,"data":"\n"}
+,{"stream_name":"stdout","time":37741.74036175,"data":"[BEST] epoch=3 | SIH-15 VAL RMSE=0.800245 °C\n"}
+,{"stream_name":"stdout","time":37741.740368575,"data":"\n"}
+,{"stream_name":"stdout","time":37741.740373524,"data":"EPOCH 3 COMPLETE | train_loss_all36=0.647289 | val_RMSE_SIH15=0.800245 °C | skill=0.221812 | ACC=0.493387 | best_epoch=3 | best_RMSE=0.800245 °C | epoch_time=312.7 min | runtime=10.44 h\n"}
+,{"stream_name":"stdout","time":37747.654240644,"data":"  epoch=04 | step=0001/3275 | date=2018-05-08 | loss_all36=0.711637 | elapsed=0.1m\n"}
+,{"stream_name":"stdout","time":37889.092673731,"data":"  epoch=04 | step=0025/3275 | date=2013-07-15 | loss_all36=0.543391 | elapsed=2.5m\n"}
+,{"stream_name":"stdout","time":38035.277392381,"data":"  epoch=04 | step=0050/3275 | date=2020-10-30 | loss_all36=0.826915 | elapsed=4.9m\n"}
+,{"stream_name":"stdout","time":38185.138128332,"data":"  epoch=04 | step=0075/3275 | date=2017-02-23 | loss_all36=0.491429 | elapsed=7.4m\n"}
+,{"stream_name":"stdout","time":38331.473201799,"data":"  epoch=04 | step=0100/3275 | date=2015-01-15 | loss_all36=0.442292 | elapsed=9.8m\n"}
+,{"stream_name":"stdout","time":38476.224327065,"data":"  epoch=04 | step=0125/3275 | date=2014-06-05 | loss_all36=0.859136 | elapsed=12.2m\n"}
+,{"stream_name":"stdout","time":38617.344976151,"data":"  epoch=04 | step=0150/3275 | date=2016-12-01 | loss_all36=0.970398 | elapsed=14.6m\n"}
+,{"stream_name":"stdout","time":38764.085480823,"data":"  epoch=04 | step=0175/3275 | date=2013-06-18 | loss_all36=0.575978 | elapsed=17.0m\n"}
+,{"stream_name":"stdout","time":38908.602398556,"data":"  epoch=04 | step=0200/3275 | date=2014-05-06 | loss_all36=0.619993 | elapsed=19.4m\n"}
+,{"stream_name":"stdout","time":39053.70772613,"data":"  epoch=04 | step=0225/3275 | date=2017-01-06 | loss_all36=0.512562 | elapsed=21.9m\n"}
+,{"stream_name":"stdout","time":39190.445098956,"data":"  epoch=04 | step=0250/3275 | date=2019-09-06 | loss_all36=0.748786 | elapsed=24.1m\n"}
+,{"stream_name":"stdout","time":39330.201917699,"data":"  epoch=04 | step=0275/3275 | date=2015-01-09 | loss_all36=0.443667 | elapsed=26.5m\n"}
+,{"stream_name":"stdout","time":39471.985673851,"data":"  epoch=04 | step=0300/3275 | date=2020-12-30 | loss_all36=0.892830 | elapsed=28.8m\n"}
+,{"stream_name":"stdout","time":39612.372024611,"data":"  epoch=04 | step=0325/3275 | date=2016-09-27 | loss_all36=0.676766 | elapsed=31.2m\n"}
+,{"stream_name":"stdout","time":39755.260675566,"data":"  epoch=04 | step=0350/3275 | date=2014-04-09 | loss_all36=0.470402 | elapsed=33.6m\n"}
+,{"stream_name":"stdout","time":39887.707245993,"data":"  epoch=04 | step=0375/3275 | date=2014-07-18 | loss_all36=0.569182 | elapsed=35.8m\n"}
+,{"stream_name":"stdout","time":40028.567455612,"data":"  epoch=04 | step=0400/3275 | date=2014-01-10 | loss_all36=0.435786 | elapsed=38.1m\n"}
+,{"stream_name":"stdout","time":40185.29571383,"data":"  epoch=04 | step=0425/3275 | date=2017-08-05 | loss_all36=0.690637 | elapsed=40.7m\n"}
+,{"stream_name":"stdout","time":40343.364610547,"data":"  epoch=04 | step=0450/3275 | date=2020-05-06 | loss_all36=0.744283 | elapsed=43.4m\n"}
+,{"stream_name":"stdout","time":40494.906924944,"data":"  epoch=04 | step=0475/3275 | date=2012-03-21 | loss_all36=0.493246 | elapsed=45.9m\n"}
+,{"stream_name":"stdout","time":40641.25808183,"data":"  epoch=04 | step=0500/3275 | date=2016-12-14 | loss_all36=0.448861 | elapsed=48.3m\n"}
+,{"stream_name":"stdout","time":40787.614110109,"data":"  epoch=04 | step=0525/3275 | date=2020-09-08 | loss_all36=0.858320 | elapsed=50.8m\n"}
+,{"stream_name":"stdout","time":40931.716010023,"data":"  epoch=04 | step=0550/3275 | date=2014-07-14 | loss_all36=0.534221 | elapsed=53.2m\n"}
+,{"stream_name":"stdout","time":41076.23973184,"data":"  epoch=04 | step=0575/3275 | date=2014-11-09 | loss_all36=0.531628 | elapsed=55.6m\n"}
+,{"stream_name":"stdout","time":41217.513939688,"data":"  epoch=04 | step=0600/3275 | date=2014-06-21 | loss_all36=0.525135 | elapsed=57.9m\n"}
+,{"stream_name":"stdout","time":41362.468755285,"data":"  epoch=04 | step=0625/3275 | date=2014-06-01 | loss_all36=0.995052 | elapsed=60.3m\n"}
+,{"stream_name":"stdout","time":41505.821778937,"data":"  epoch=04 | step=0650/3275 | date=2019-06-09 | loss_all36=0.768685 | elapsed=62.7m\n"}
+,{"stream_name":"stdout","time":41647.625020223,"data":"  epoch=04 | step=0675/3275 | date=2013-05-13 | loss_all36=0.396647 | elapsed=65.1m\n"}
+,{"stream_name":"stdout","time":41793.494966669,"data":"  epoch=04 | step=0700/3275 | date=2016-03-24 | loss_all36=0.810601 | elapsed=67.5m\n"}
+,{"stream_name":"stdout","time":41938.8745268,"data":"  epoch=04 | step=0725/3275 | date=2015-06-19 | loss_all36=0.541029 | elapsed=70.0m\n"}
+,{"stream_name":"stdout","time":42085.830070852,"data":"  epoch=04 | step=0750/3275 | date=2018-01-31 | loss_all36=0.607559 | elapsed=72.4m\n"}
+,{"stream_name":"stdout","time":42230.984606162,"data":"  epoch=04 | step=0775/3275 | date=2020-11-01 | loss_all36=0.830447 | elapsed=74.8m\n"}
+,{"stream_name":"stdout","time":42371.514282419,"data":"  epoch=04 | step=0800/3275 | date=2012-08-14 | loss_all36=0.673802 | elapsed=77.2m\n"}
+,{"stream_name":"stdout","time":42498.816349078,"data":"  epoch=04 | step=0825/3275 | date=2019-07-21 | loss_all36=0.699199 | elapsed=79.3m\n"}
+,{"stream_name":"stdout","time":42641.365842622,"data":"  epoch=04 | step=0850/3275 | date=2016-11-06 | loss_all36=0.668802 | elapsed=81.7m\n"}
+,{"stream_name":"stdout","time":42792.764172138,"data":"  epoch=04 | step=0875/3275 | date=2014-11-16 | loss_all36=0.441449 | elapsed=84.2m\n"}
+,{"stream_name":"stdout","time":42938.976740911,"data":"  epoch=04 | step=0900/3275 | date=2020-09-09 | loss_all36=0.771005 | elapsed=86.6m\n"}
+,{"stream_name":"stdout","time":43085.662671999,"data":"  epoch=04 | step=0925/3275 | date=2013-12-09 | loss_all36=0.517787 | elapsed=89.1m\n"}
+,{"stream_name":"stderr","time":43208.195080863,"data":"Timeout waiting for execute reply (43200s).\n"}
+,{"stream_name":"stderr","time":43211.94504445,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":43211.946032875,"data":"  File \"/usr/local/lib/python3.13/dist-packages/nbclient/client.py\", line 730, in _async_poll_for_reply\n"}
+,{"stream_name":"stderr","time":43211.946067458,"data":"    msg = await ensure_async(self.kc.shell_channel.get_msg(timeout=new_timeout))\n"}
+,{"stream_name":"stderr","time":43211.946074082,"data":"          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":43211.946079012,"data":"  File \"/usr/local/lib/python3.13/dist-packages/nbclient/util.py\", line 96, in ensure_async\n"}
+,{"stream_name":"stderr","time":43211.94608373,"data":"    result = await obj\n"}
+,{"stream_name":"stderr","time":43211.946089596,"data":"             ^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":43211.946094737,"data":"  File \"/usr/local/lib/python3.13/dist-packages/jupyter_client/channels.py\", line 230, in get_msg\n"}
+,{"stream_name":"stderr","time":43211.946099295,"data":"    raise Empty\n"}
+,{"stream_name":"stderr","time":43211.946105196,"data":"_queue.Empty\n"}
+,{"stream_name":"stderr","time":43211.946522056,"data":"\n"}
+,{"stream_name":"stderr","time":43211.946535225,"data":"During handling of the above exception, another exception occurred:\n"}
+,{"stream_name":"stderr","time":43211.946541544,"data":"\n"}
+,{"stream_name":"stderr","time":43211.946546582,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":43211.948410093,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":43211.948430401,"data":"    import sys;import papermill as pm;pm.execute_notebook(\"__notebook__.ipynb\",\"__notebook__.ipynb\",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=43200)\n"}
+,{"stream_name":"stderr","time":43211.948437475,"data":"                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":43211.948442504,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 116, in execute_notebook\n"}
+,{"stream_name":"stderr","time":43211.9484468,"data":"    nb = papermill_engines.execute_notebook_with_engine(\n"}
+,{"stream_name":"stderr","time":43211.948451476,"data":"        engine_name,\n"}
+,{"stream_name":"stderr","time":43211.948467914,"data":"    ...\u003c9 lines\u003e...\n"}
+,{"stream_name":"stderr","time":43211.948471564,"data":"        **engine_kwargs,\n"}
+,{"stream_name":"stderr","time":43211.948474998,"data":"    )\n"}
+,{"stream_name":"stderr","time":43211.948478301,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/engines.py\", line 49, in execute_notebook_with_engine\n"}
+,{"stream_name":"stderr","time":43211.948481765,"data":"    return self.get_engine(engine_name).execute_notebook(nb, kernel_name, **kwargs)\n"}
+,{"stream_name":"stderr","time":43211.94848537,"data":"           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":43211.948488944,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/engines.py\", line 371, in execute_notebook\n"}
+,{"stream_name":"stderr","time":43211.948492492,"data":"    cls.execute_managed_notebook(nb_man, kernel_name, log_output=log_output, **kwargs)\n"}
+,{"stream_name":"stderr","time":43211.948495887,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":43211.948499153,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/engines.py\", line 443, in execute_managed_notebook\n"}
+,{"stream_name":"stderr","time":43211.948502501,"data":"    return PapermillNotebookClient(nb_man, **final_kwargs).execute()\n"}
+,{"stream_name":"stderr","time":43211.948506374,"data":"           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":43211.948510757,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/clientwrap.py\", line 45, in execute\n"}
+,{"stream_name":"stderr","time":43211.948514734,"data":"    self.papermill_execute_cells()\n"}
+,{"stream_name":"stderr","time":43211.948518897,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":43211.94852206,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/clientwrap.py\", line 72, in papermill_execute_cells\n"}
+,{"stream_name":"stderr","time":43211.948525369,"data":"    self.execute_cell(cell, index)\n"}
+,{"stream_name":"stderr","time":43211.948528756,"data":"    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":43211.948532362,"data":"  File \"/usr/local/lib/python3.13/dist-packages/nbclient/util.py\", line 84, in wrapped\n"}
+,{"stream_name":"stderr","time":43211.948535634,"data":"    return just_run(coro(*args, **kwargs))\n"}
+,{"stream_name":"stderr","time":43211.948539959,"data":"  File \"/usr/local/lib/python3.13/dist-packages/nbclient/util.py\", line 62, in just_run\n"}
+,{"stream_name":"stderr","time":43211.948543392,"data":"    return loop.run_until_complete(coro)\n"}
+,{"stream_name":"stderr","time":43211.948546467,"data":"           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^\n"}
+,{"stream_name":"stderr","time":43211.948549521,"data":"  File \"/usr/lib/python3.13/asyncio/base_events.py\", line 726, in run_until_complete\n"}
+,{"stream_name":"stderr","time":43211.948594315,"data":"    return future.result()\n"}
+,{"stream_name":"stderr","time":43211.948598272,"data":"           ~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":43211.948601508,"data":"  File \"/usr/local/lib/python3.13/dist-packages/nbclient/client.py\", line 949, in async_execute_cell\n"}
+,{"stream_name":"stderr","time":43211.948604962,"data":"    exec_reply = await self.task_poll_for_reply\n"}
+,{"stream_name":"stderr","time":43211.948608032,"data":"                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":43211.948611116,"data":"  File \"/usr/local/lib/python3.13/dist-packages/nbclient/client.py\", line 754, in _async_poll_for_reply\n"}
+,{"stream_name":"stderr","time":43211.948620634,"data":"    await self._async_handle_timeout(timeout, cell)\n"}
+,{"stream_name":"stderr","time":43211.948625046,"data":"  File \"/usr/local/lib/python3.13/dist-packages/nbclient/client.py\", line 801, in _async_handle_timeout\n"}
+,{"stream_name":"stderr","time":43211.948629261,"data":"    raise CellTimeoutError.error_from_timeout_and_cell(\n"}
+,{"stream_name":"stderr","time":43211.948634084,"data":"        \"Cell execution timed out\", timeout, cell\n"}
+,{"stream_name":"stderr","time":43211.948637534,"data":"    )\n"}
+,{"stream_name":"stderr","time":43211.950289634,"data":"nbclient.exceptions.CellTimeoutError: A cell timed out while it was being executed, after 43200 seconds.\n"}
+,{"stream_name":"stderr","time":43211.950302429,"data":"The message was: Cell execution timed out.\n"}
+,{"stream_name":"stderr","time":43211.950306634,"data":"Here is a preview of the cell contents:\n"}
+,{"stream_name":"stderr","time":43211.950310269,"data":"-------------------\n"}
+,{"stream_name":"stderr","time":43211.950314034,"data":"['#!/usr/bin/env python3', '# -*- coding: utf-8 -*-', '\"\"\"', 'OceanEmbed B6-Native36 REAL RUN', '']\n"}
+,{"stream_name":"stderr","time":43211.950318203,"data":"...\n"}
+,{"stream_name":"stderr","time":43211.950322088,"data":"['    )', '', '', 'if __name__ == \"__main__\":', '    main()']\n"}
+,{"stream_name":"stderr","time":43211.950325596,"data":"-------------------\n"}
+,{"stream_name":"stderr","time":43211.950329184,"data":"\n"}
+]
