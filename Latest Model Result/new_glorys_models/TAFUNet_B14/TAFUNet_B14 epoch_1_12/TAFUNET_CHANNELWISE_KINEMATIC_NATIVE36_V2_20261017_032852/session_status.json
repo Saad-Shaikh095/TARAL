@@ -1,0 +1,14 @@
+{
+  "status": "PAUSED_AT_SESSION_LIMIT",
+  "reason": "Configured 11-hour wall-clock budget reached; exiting before Kaggle hard cutoff.",
+  "stage": "training",
+  "epoch": 13,
+  "epoch_complete": false,
+  "step_in_epoch": 2040,
+  "global_step": 41340,
+  "best_epoch": 12,
+  "best_validation_rmse_C": 0.815581277929285,
+  "elapsed_hours": 11.0001,
+  "resume_instruction": "Attach this run output or publish latest_model.pt as a Kaggle dataset; this script resumes only matching TAFU-Net Native36 checkpoints.",
+  "saved_utc": "2026-10-17T14:21:42.148309+00:00"
+}

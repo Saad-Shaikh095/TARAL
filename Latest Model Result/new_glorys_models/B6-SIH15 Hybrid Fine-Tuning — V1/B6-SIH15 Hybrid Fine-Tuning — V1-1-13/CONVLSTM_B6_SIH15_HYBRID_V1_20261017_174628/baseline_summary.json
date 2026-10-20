@@ -1,0 +1,9 @@
+{
+  "status": "BASELINE_VALIDATED",
+  "source_checkpoint": "/kaggle/input/datasets/soulshogan/best-checkpoint-epoch7/best_model.pt",
+  "source_epoch": 7,
+  "source_recorded_val_rmse_C": 0.7771781508380169,
+  "baseline_recomputed_val_rmse_C": 0.7771781508380169,
+  "aux_native36_weight": 0.25,
+  "note": "Epoch-0 best_model.pt is an untouched copy of the source model under the new experiment's checkpoint schema; it is replaced only by a lower SIH-15 validation RMSE."
+}

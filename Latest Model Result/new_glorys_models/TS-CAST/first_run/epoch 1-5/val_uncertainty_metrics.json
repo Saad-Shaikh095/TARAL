@@ -1,0 +1,334 @@
+{
+  "scale": "normalized monthly anomaly; sigma converted to Celsius by the train-only per-depth anomaly std",
+  "overall_mean_NLL_no_constant": 0.42855077605734465,
+  "overall_one_sigma_coverage": 0.6496627077085614,
+  "overall_95pct_interval_coverage": 0.9088995053641328,
+  "overall_normalized_anomaly_RMSE": 1.0482482110408202,
+  "by_native_depth": [
+    {
+      "native_depth_m": 0.49402499198913574,
+      "n_valid_cells": 8671600,
+      "normalized_anomaly_RMSE": 0.9269519968404715,
+      "mean_NLL_no_constant": 0.2720900872510443,
+      "one_sigma_coverage": 0.6876597167766041,
+      "95pct_interval_coverage": 0.9332607592601134,
+      "mean_predicted_sigma_C": 0.5346179293197524
+    },
+    {
+      "native_depth_m": 1.5413750410079956,
+      "n_valid_cells": 8669500,
+      "normalized_anomaly_RMSE": 0.9325330392099984,
+      "mean_NLL_no_constant": 0.2731362123379927,
+      "one_sigma_coverage": 0.6674465655458792,
+      "95pct_interval_coverage": 0.9239243324297826,
+      "mean_predicted_sigma_C": 0.5132904420338212
+    },
+    {
+      "native_depth_m": 2.6456689834594727,
+      "n_valid_cells": 8664600,
+      "normalized_anomaly_RMSE": 0.9307129785427635,
+      "mean_NLL_no_constant": 0.26441008817901096,
+      "one_sigma_coverage": 0.6625796920804192,
+      "95pct_interval_coverage": 0.9219315375204856,
+      "mean_predicted_sigma_C": 0.502329967961755
+    },
+    {
+      "native_depth_m": 3.8194949626922607,
+      "n_valid_cells": 8659000,
+      "normalized_anomaly_RMSE": 0.9286265049086359,
+      "mean_NLL_no_constant": 0.25750264347638996,
+      "one_sigma_coverage": 0.6656986949994226,
+      "95pct_interval_coverage": 0.9236530777226007,
+      "mean_predicted_sigma_C": 0.503151004090085
+    },
+    {
+      "native_depth_m": 5.078224182128906,
+      "n_valid_cells": 8654100,
+      "normalized_anomaly_RMSE": 0.930442638469504,
+      "mean_NLL_no_constant": 0.25240031700633697,
+      "one_sigma_coverage": 0.6729592909719093,
+      "95pct_interval_coverage": 0.9274313909014225,
+      "mean_predicted_sigma_C": 0.5121859302693491
+    },
+    {
+      "native_depth_m": 6.440614223480225,
+      "n_valid_cells": 8650600,
+      "normalized_anomaly_RMSE": 0.9329902957516064,
+      "mean_NLL_no_constant": 0.2501607795122485,
+      "one_sigma_coverage": 0.6746341294245486,
+      "95pct_interval_coverage": 0.9282911011952928,
+      "mean_predicted_sigma_C": 0.5160335222013624
+    },
+    {
+      "native_depth_m": 7.92956018447876,
+      "n_valid_cells": 8591800,
+      "normalized_anomaly_RMSE": 0.9310878726225603,
+      "mean_NLL_no_constant": 0.2485495716037163,
+      "one_sigma_coverage": 0.6731562652761935,
+      "95pct_interval_coverage": 0.9277644963802696,
+      "mean_predicted_sigma_C": 0.511735279618156
+    },
+    {
+      "native_depth_m": 9.572997093200684,
+      "n_valid_cells": 8558200,
+      "normalized_anomaly_RMSE": 0.9312137183056886,
+      "mean_NLL_no_constant": 0.2458229098514237,
+      "one_sigma_coverage": 0.6740188357364867,
+      "95pct_interval_coverage": 0.9282568764459816,
+      "mean_predicted_sigma_C": 0.5122493029262073
+    },
+    {
+      "native_depth_m": 11.404999732971191,
+      "n_valid_cells": 8509900,
+      "normalized_anomaly_RMSE": 0.9304694665746487,
+      "mean_NLL_no_constant": 0.24201521452362007,
+      "one_sigma_coverage": 0.6747415363282765,
+      "95pct_interval_coverage": 0.9287870597774357,
+      "mean_predicted_sigma_C": 0.5120917611170498
+    },
+    {
+      "native_depth_m": 13.467140197753906,
+      "n_valid_cells": 8449700,
+      "normalized_anomaly_RMSE": 0.9286207888101464,
+      "mean_NLL_no_constant": 0.23643227905544675,
+      "one_sigma_coverage": 0.6760055386581773,
+      "95pct_interval_coverage": 0.9295124087245701,
+      "mean_predicted_sigma_C": 0.5124717459134781
+    },
+    {
+      "native_depth_m": 15.810070037841797,
+      "n_valid_cells": 8397200,
+      "normalized_anomaly_RMSE": 0.9280841997315163,
+      "mean_NLL_no_constant": 0.22849294590608166,
+      "one_sigma_coverage": 0.6784969989996665,
+      "95pct_interval_coverage": 0.9311007240508741,
+      "mean_predicted_sigma_C": 0.5156732600714958
+    },
+    {
+      "native_depth_m": 18.495559692382812,
+      "n_valid_cells": 8339800,
+      "normalized_anomaly_RMSE": 0.9279391384830503,
+      "mean_NLL_no_constant": 0.21879781874150303,
+      "one_sigma_coverage": 0.682438068059186,
+      "95pct_interval_coverage": 0.9331644643756445,
+      "mean_predicted_sigma_C": 0.5216578332020643
+    },
+    {
+      "native_depth_m": 21.598819732666016,
+      "n_valid_cells": 8267700,
+      "normalized_anomaly_RMSE": 0.9271270469079677,
+      "mean_NLL_no_constant": 0.2097594508174046,
+      "one_sigma_coverage": 0.6870604884066911,
+      "95pct_interval_coverage": 0.9352644629098782,
+      "mean_predicted_sigma_C": 0.5317145343952843
+    },
+    {
+      "native_depth_m": 25.211410522460938,
+      "n_valid_cells": 8183700,
+      "normalized_anomaly_RMSE": 0.9256907540134581,
+      "mean_NLL_no_constant": 0.20801708684725698,
+      "one_sigma_coverage": 0.6899633417647274,
+      "95pct_interval_coverage": 0.93602600290822,
+      "mean_predicted_sigma_C": 0.5475362077431534
+    },
+    {
+      "native_depth_m": 29.444730758666992,
+      "n_valid_cells": 8100400,
+      "normalized_anomaly_RMSE": 0.9310075538561672,
+      "mean_NLL_no_constant": 0.22455129624661044,
+      "one_sigma_coverage": 0.6880968841044887,
+      "95pct_interval_coverage": 0.9326350550590095,
+      "mean_predicted_sigma_C": 0.5701653364257668
+    },
+    {
+      "native_depth_m": 34.43415069580078,
+      "n_valid_cells": 8006600,
+      "normalized_anomaly_RMSE": 0.9410110670450278,
+      "mean_NLL_no_constant": 0.26893950962059693,
+      "one_sigma_coverage": 0.679749706492144,
+      "95pct_interval_coverage": 0.9241168535957834,
+      "mean_predicted_sigma_C": 0.6017526219825213
+    },
+    {
+      "native_depth_m": 40.344051361083984,
+      "n_valid_cells": 7928900,
+      "normalized_anomaly_RMSE": 0.9581040020940197,
+      "mean_NLL_no_constant": 0.343186093727915,
+      "one_sigma_coverage": 0.6623083908234434,
+      "95pct_interval_coverage": 0.9122648791131178,
+      "mean_predicted_sigma_C": 0.6494611435222684
+    },
+    {
+      "native_depth_m": 47.37369155883789,
+      "n_valid_cells": 7830900,
+      "normalized_anomaly_RMSE": 0.9795596366238627,
+      "mean_NLL_no_constant": 0.43296289872477106,
+      "one_sigma_coverage": 0.6397706521600327,
+      "95pct_interval_coverage": 0.8977452144708782,
+      "mean_predicted_sigma_C": 0.7196109706005618
+    },
+    {
+      "native_depth_m": 55.76428985595703,
+      "n_valid_cells": 7708400,
+      "normalized_anomaly_RMSE": 0.9991455721983589,
+      "mean_NLL_no_constant": 0.5111771742857509,
+      "one_sigma_coverage": 0.6153516942556172,
+      "95pct_interval_coverage": 0.8843949457734419,
+      "mean_predicted_sigma_C": 0.8182862140019836
+    },
+    {
+      "native_depth_m": 65.80726623535156,
+      "n_valid_cells": 7550200,
+      "normalized_anomaly_RMSE": 1.0281947689154838,
+      "mean_NLL_no_constant": 0.5926702186127933,
+      "one_sigma_coverage": 0.5946394797488809,
+      "95pct_interval_coverage": 0.8697492781648168,
+      "mean_predicted_sigma_C": 0.9544220470129665
+    },
+    {
+      "native_depth_m": 77.85385131835938,
+      "n_valid_cells": 7385700,
+      "normalized_anomaly_RMSE": 1.076884174156097,
+      "mean_NLL_no_constant": 0.6838159222329553,
+      "one_sigma_coverage": 0.5841210718009126,
+      "95pct_interval_coverage": 0.8571310776229741,
+      "mean_predicted_sigma_C": 1.1265534955295566
+    },
+    {
+      "native_depth_m": 92.3260726928711,
+      "n_valid_cells": 7235900,
+      "normalized_anomaly_RMSE": 1.128544141184966,
+      "mean_NLL_no_constant": 0.7449058264796665,
+      "one_sigma_coverage": 0.5925546234746196,
+      "95pct_interval_coverage": 0.8604943407178098,
+      "mean_predicted_sigma_C": 1.2982080668137967
+    },
+    {
+      "native_depth_m": 109.72930145263672,
+      "n_valid_cells": 7142100,
+      "normalized_anomaly_RMSE": 1.134101108102001,
+      "mean_NLL_no_constant": 0.7147065384633896,
+      "one_sigma_coverage": 0.6137414765965192,
+      "95pct_interval_coverage": 0.8802903907814228,
+      "mean_predicted_sigma_C": 1.37790809658308
+    },
+    {
+      "native_depth_m": 130.66600036621094,
+      "n_valid_cells": 7097300,
+      "normalized_anomaly_RMSE": 1.0993760638784242,
+      "mean_NLL_no_constant": 0.6414634385473833,
+      "one_sigma_coverage": 0.6335838981020951,
+      "95pct_interval_coverage": 0.8977225141955392,
+      "mean_predicted_sigma_C": 1.2941151483279565
+    },
+    {
+      "native_depth_m": 155.85069274902344,
+      "n_valid_cells": 7060900,
+      "normalized_anomaly_RMSE": 1.0708716599503911,
+      "mean_NLL_no_constant": 0.5655513206974323,
+      "one_sigma_coverage": 0.6532957554985909,
+      "95pct_interval_coverage": 0.9104707615176536,
+      "mean_predicted_sigma_C": 1.0752403501770733
+    },
+    {
+      "native_depth_m": 186.12559509277344,
+      "n_valid_cells": 7033600,
+      "normalized_anomaly_RMSE": 1.074234118393974,
+      "mean_NLL_no_constant": 0.5245970982698227,
+      "one_sigma_coverage": 0.6572098214285714,
+      "95pct_interval_coverage": 0.9146417197452229,
+      "mean_predicted_sigma_C": 0.797172986131789
+    },
+    {
+      "native_depth_m": 222.47520446777344,
+      "n_valid_cells": 7013300,
+      "normalized_anomaly_RMSE": 1.122970360517413,
+      "mean_NLL_no_constant": 0.564827980436501,
+      "one_sigma_coverage": 0.6295331726861819,
+      "95pct_interval_coverage": 0.9015703021402193,
+      "mean_predicted_sigma_C": 0.5662476063555871
+    },
+    {
+      "native_depth_m": 266.0403137207031,
+      "n_valid_cells": 6982500,
+      "normalized_anomaly_RMSE": 1.1770523216101791,
+      "mean_NLL_no_constant": 0.5887903628351011,
+      "one_sigma_coverage": 0.6164421052631579,
+      "95pct_interval_coverage": 0.890006731113498,
+      "mean_predicted_sigma_C": 0.4338409108577771
+    },
+    {
+      "native_depth_m": 318.1274108886719,
+      "n_valid_cells": 6956600,
+      "normalized_anomaly_RMSE": 1.1960752799932164,
+      "mean_NLL_no_constant": 0.553272118327829,
+      "one_sigma_coverage": 0.6246400540493919,
+      "95pct_interval_coverage": 0.8941386596900784,
+      "mean_predicted_sigma_C": 0.36797251988272994
+    },
+    {
+      "native_depth_m": 380.2130126953125,
+      "n_valid_cells": 6925100,
+      "normalized_anomaly_RMSE": 1.2314965221139853,
+      "mean_NLL_no_constant": 0.5408399677046631,
+      "one_sigma_coverage": 0.6357303143636915,
+      "95pct_interval_coverage": 0.8997653463487892,
+      "mean_predicted_sigma_C": 0.3116309895968816
+    },
+    {
+      "native_depth_m": 453.9377136230469,
+      "n_valid_cells": 6883800,
+      "normalized_anomaly_RMSE": 1.2577204402396347,
+      "mean_NLL_no_constant": 0.5700393104071108,
+      "one_sigma_coverage": 0.6387476393852233,
+      "95pct_interval_coverage": 0.8977303233679073,
+      "mean_predicted_sigma_C": 0.2877128449425967
+    },
+    {
+      "native_depth_m": 541.0889282226562,
+      "n_valid_cells": 6843200,
+      "normalized_anomaly_RMSE": 1.2447180609240052,
+      "mean_NLL_no_constant": 0.6182127860218447,
+      "one_sigma_coverage": 0.628530365910685,
+      "95pct_interval_coverage": 0.8930886135141455,
+      "mean_predicted_sigma_C": 0.2825127994739362
+    },
+    {
+      "native_depth_m": 643.5667724609375,
+      "n_valid_cells": 6814500,
+      "normalized_anomaly_RMSE": 1.2421347149834125,
+      "mean_NLL_no_constant": 0.7129662934390821,
+      "one_sigma_coverage": 0.6232331058771736,
+      "95pct_interval_coverage": 0.8864301122606207,
+      "mean_predicted_sigma_C": 0.2957133340776611
+    },
+    {
+      "native_depth_m": 763.3331298828125,
+      "n_valid_cells": 6781600,
+      "normalized_anomaly_RMSE": 1.2622396338948831,
+      "mean_NLL_no_constant": 0.7234828463058589,
+      "one_sigma_coverage": 0.6130995635248319,
+      "95pct_interval_coverage": 0.8855267193582635,
+      "mean_predicted_sigma_C": 0.30284233389693455
+    },
+    {
+      "native_depth_m": 902.3392944335938,
+      "n_valid_cells": 6710200,
+      "normalized_anomaly_RMSE": 1.2832995105252496,
+      "mean_NLL_no_constant": 0.7074523505551716,
+      "one_sigma_coverage": 0.6131022920330244,
+      "95pct_interval_coverage": 0.8892454770349617,
+      "mean_predicted_sigma_C": 0.3075928145939576
+    },
+    {
+      "native_depth_m": 1062.43994140625,
+      "n_valid_cells": 6642300,
+      "normalized_anomaly_RMSE": 1.4070058026986407,
+      "mean_NLL_no_constant": 0.8142676054710435,
+      "one_sigma_coverage": 0.6012012405341524,
+      "95pct_interval_coverage": 0.8732842539481807,
+      "mean_predicted_sigma_C": 0.30345271795878925
+    }
+  ],
+  "interpretation_note": "Coverage is a diagnostic, not guaranteed calibration; assess on independent profiles before operational confidence claims."
+}

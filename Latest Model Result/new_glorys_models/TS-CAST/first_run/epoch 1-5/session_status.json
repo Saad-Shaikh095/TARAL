@@ -1,0 +1,11 @@
+{
+  "status": "RUNNING",
+  "stage": "epoch_complete",
+  "epoch": 5,
+  "global_step": 800,
+  "best_epoch": 5,
+  "best_validation_RMSE_C": 0.9240511407495383,
+  "elapsed_hours": 2.6171,
+  "latest_checkpoint": "/kaggle/working/OceanEmbed_Runs/OCEANEMBED_TSCAST_NATIVE36_9X9_31DAY/latest_model.pt",
+  "best_checkpoint": "/kaggle/working/OceanEmbed_Runs/OCEANEMBED_TSCAST_NATIVE36_9X9_31DAY/best_model.pt"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PAUSED_AT_SESSION_LIMIT",
+  "reason": "Configured 11-hour wall-clock budget reached; exiting before Kaggle hard cutoff.",
+  "stage": "training",
+  "epoch": 13,
+  "epoch_complete": false,
+  "step_in_epoch": 577,
+  "global_step": 39877,
+  "best_epoch": 2,
+  "best_validation_rmse_C": 0.7658801069887944,
+  "elapsed_hours": 11.0007,
+  "resume_instruction": "Attach this hybrid run output or publish latest_model.pt as a Kaggle dataset; the script resumes only compatible B6-SIH15 Hybrid checkpoints.",
+  "saved_utc": "2026-10-18T04:37:32.331722+00:00"
+}
