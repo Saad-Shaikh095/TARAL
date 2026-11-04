@@ -1,0 +1,569 @@
+{
+  "version": "1.0",
+  "description": "OceanEmbed Python script reorganization manifest",
+  "notes": [
+    "Files inside oceanembed-software/ are a proper Python package — DO NOT MOVE them.",
+    "Files inside .kilo/worktrees/ are git worktree copies — DO NOT MOVE them.",
+    "Files inside oceanembed-data/ are co-located with raw data — marked retain.",
+    "Duplicate files (same name, different folder) are flagged. Only one canonical copy is moved; duplicates retain.",
+    "all_baselines/ contains training outputs + scripts mixed — scripts moved, outputs retained."
+  ],
+  "moves": [
+    {
+      "id": "M001",
+      "src": "all scripts for collection/fetch_ARGO.py",
+      "dst": "data_acquisition/downloaders/fetch_ARGO.py",
+      "category": "data_acquisition",
+      "reason": "Primary Argo float profile downloader"
+    },
+    {
+      "id": "M002",
+      "src": "all scripts for collection/fetch_CCMP.py",
+      "dst": "data_acquisition/downloaders/fetch_CCMP.py",
+      "category": "data_acquisition",
+      "reason": "CCMP wind data downloader"
+    },
+    {
+      "id": "M003",
+      "src": "all scripts for collection/fetch_CMEMS_DUACS.py",
+      "dst": "data_acquisition/downloaders/fetch_CMEMS_DUACS.py",
+      "category": "data_acquisition",
+      "reason": "CMEMS DUACS SLA downloader"
+    },
+    {
+      "id": "M004",
+      "src": "all scripts for collection/fetch_CMEMS_GlobCurrent.py",
+      "dst": "data_acquisition/downloaders/fetch_CMEMS_GlobCurrent.py",
+      "category": "data_acquisition",
+      "reason": "CMEMS GlobCurrent downloader"
+    },
+    {
+      "id": "M005",
+      "src": "all scripts for collection/fetch_GLORYS.py",
+      "dst": "data_acquisition/downloaders/fetch_GLORYS.py",
+      "category": "data_acquisition",
+      "reason": "GLORYS reanalysis downloader"
+    },
+    {
+      "id": "M006",
+      "src": "all scripts for collection/fetch_OISSS.py",
+      "dst": "data_acquisition/downloaders/fetch_OISSS.py",
+      "category": "data_acquisition",
+      "reason": "OISSS SSS downloader"
+    },
+    {
+      "id": "M007",
+      "src": "all scripts for collection/fetch_OISST.py",
+      "dst": "data_acquisition/downloaders/fetch_OISST.py",
+      "category": "data_acquisition",
+      "reason": "OISST SST downloader"
+    },
+    {
+      "id": "M008",
+      "src": "all scripts for collection/fetch_OSCAR.py",
+      "dst": "data_acquisition/downloaders/fetch_OSCAR.py",
+      "category": "data_acquisition",
+      "reason": "OSCAR surface currents downloader"
+    },
+    {
+      "id": "M009",
+      "src": "new_glorys/OceanEmbed_GLORYS_ACQUISITION_FULL_VERTICAL_V4_2_5_100x240_AREA_WEIGHTED_WORKING.py",
+      "dst": "data_acquisition/downloaders/OceanEmbed_GLORYS_ACQUISITION_FULL_VERTICAL_V4_2_5_100x240_AREA_WEIGHTED_WORKING.py",
+      "category": "data_acquisition",
+      "reason": "GLORYS V4.2.5 full-vertical acquisition — working version"
+    },
+    {
+      "id": "M010",
+      "src": "new_glorys/OceanEmbed_GLORYS_ACQUISITION_FULL_VERTICAL_V4_2_6_MULTIYEAR_CONFIGURABLE.py",
+      "dst": "data_acquisition/downloaders/OceanEmbed_GLORYS_ACQUISITION_FULL_VERTICAL_V4_2_6_MULTIYEAR_CONFIGURABLE.py",
+      "category": "data_acquisition",
+      "reason": "GLORYS V4.2.6 multi-year configurable acquisition"
+    },
+    {
+      "id": "M011",
+      "src": "argo/indexes/acquire_argo_2012_2024_v6.py",
+      "dst": "data_acquisition/collectors/acquire_argo_2012_2024_v6.py",
+      "category": "data_acquisition",
+      "reason": "Argo V6 bulk downloader with SQLite state"
+    },
+    {
+      "id": "M012",
+      "src": "argo/indexes/download_argo_index.py",
+      "dst": "data_acquisition/collectors/download_argo_index.py",
+      "category": "data_acquisition",
+      "reason": "Downloads Argo global profile index from IFREMER"
+    },
+    {
+      "id": "M013",
+      "src": "argo/indexes/acquire_argo_jan2012.py",
+      "dst": "audits/datasets/acquire_argo_jan2012.py",
+      "category": "audit",
+      "reason": "Audits Jan 2012 Argo raw NetCDF (multiprocessing)"
+    },
+    {
+      "id": "M014",
+      "src": "argo/indexes/audit_argo_index.py",
+      "dst": "audits/datasets/audit_argo_index.py",
+      "category": "audit",
+      "reason": "Parses Argo index, outputs profile manifest CSV"
+    },
+    {
+      "id": "M015",
+      "src": "argo/indexes/audit_argo_profiles.py",
+      "dst": "audits/datasets/audit_argo_profiles.py",
+      "category": "audit",
+      "reason": "Multiprocessing Argo profile content audit"
+    },
+    {
+      "id": "M016",
+      "src": "argo/indexes/check_argo_manifest.py",
+      "dst": "audits/datasets/check_argo_manifest.py",
+      "category": "audit",
+      "reason": "Checks manifest CSV for duplicate file paths"
+    },
+    {
+      "id": "M017",
+      "src": "argo/indexes/test_manifest.py",
+      "dst": "audits/datasets/test_manifest.py",
+      "category": "audit",
+      "reason": "Filters manifest to Jan 2012 test subset"
+    },
+    {
+      "id": "M018",
+      "src": "audits/argo_audit.py",
+      "dst": "audits/datasets/argo_audit.py",
+      "category": "audit",
+      "reason": "Argo profile NetCDF audit"
+    },
+    {
+      "id": "M019",
+      "src": "audits/argo_scientific_audit..py",
+      "dst": "audits/datasets/argo_scientific_audit.py",
+      "category": "audit",
+      "reason": "Deep scientific Argo QC audit (note: original has double-dot filename bug)"
+    },
+    {
+      "id": "M020",
+      "src": "audits/globecurrent_analysis_2.py",
+      "dst": "audits/datasets/globecurrent_analysis_2.py",
+      "category": "audit",
+      "reason": "GlobCurrent static mask analysis"
+    },
+    {
+      "id": "M021",
+      "src": "audits/globecurrent_audit.py",
+      "dst": "audits/datasets/globecurrent_audit.py",
+      "category": "audit",
+      "reason": "GlobCurrent NetCDF structure audit"
+    },
+    {
+      "id": "M022",
+      "src": "audits/oisss_audit.py",
+      "dst": "audits/datasets/oisss_audit.py",
+      "category": "audit",
+      "reason": "OISSS SSS scientific audit"
+    },
+    {
+      "id": "M023",
+      "src": "audits/oisss_special_audit.py",
+      "dst": "audits/datasets/oisss_special_audit.py",
+      "category": "audit",
+      "reason": "OISSS gap forensics audit"
+    },
+    {
+      "id": "M024",
+      "src": "audits/oisss_special_audit_v2.py",
+      "dst": "audits/datasets/oisss_special_audit_v2.py",
+      "category": "audit",
+      "reason": "Updated OISSS gap forensics"
+    },
+    {
+      "id": "M025",
+      "src": "audits/oscar_audit.py",
+      "dst": "audits/datasets/oscar_audit.py",
+      "category": "audit",
+      "reason": "OSCAR pipeline-readiness audit (14 checks)"
+    },
+    {
+      "id": "M026",
+      "src": "audits/oscar_audit_2.py",
+      "dst": "audits/datasets/oscar_audit_2.py",
+      "category": "audit",
+      "reason": "OSCAR variable-signature investigation"
+    },
+    {
+      "id": "M027",
+      "src": "data_integration_audit/scripts/oceanembed_forensic_audit_final.py",
+      "dst": "audits/integrity/oceanembed_forensic_audit_final.py",
+      "category": "audit",
+      "reason": "Comprehensive forensic audit engine (read-only)"
+    },
+    {
+      "id": "M028",
+      "src": "data_integration_audit/scripts/oceanembed_forensic_audit_final_patched.py",
+      "dst": "audits/integrity/oceanembed_forensic_audit_final_patched.py",
+      "category": "audit",
+      "reason": "Patched forensic audit engine"
+    },
+    {
+      "id": "M029",
+      "src": "data_integration_audit/scripts/oceanembed_forensic_audit_staged.py",
+      "dst": "audits/integrity/oceanembed_forensic_audit_staged.py",
+      "category": "audit",
+      "reason": "Staged forensic audit (schema + cross-dataset)"
+    },
+    {
+      "id": "M030",
+      "src": "all_baselines/model_scripts/OceanEmbed_KaggleTrainer_V1_PointwiseLinear_B1.py",
+      "dst": "models/training/OceanEmbed_KaggleTrainer_V1_PointwiseLinear_B1.py",
+      "category": "model_training",
+      "reason": "B1 pointwise linear Kaggle trainer"
+    },
+    {
+      "id": "M031",
+      "src": "all_baselines/model_scripts/OceanEmbed_KaggleTrainer_V1_PointwiseMLP_B2.py",
+      "dst": "models/training/OceanEmbed_KaggleTrainer_V1_PointwiseMLP_B2.py",
+      "category": "model_training",
+      "reason": "B2 pointwise MLP Kaggle trainer"
+    },
+    {
+      "id": "M032",
+      "src": "all_baselines/model_scripts/OceanEmbed_KaggleTrainer_V1_SpatialCNN_B3_V3_Trainer_1.0.2.py",
+      "dst": "models/training/OceanEmbed_KaggleTrainer_V1_SpatialCNN_B3_V3_Trainer_1.0.2.py",
+      "category": "model_training",
+      "reason": "B3 spatial CNN Kaggle trainer"
+    },
+    {
+      "id": "M033",
+      "src": "all_baselines/model_scripts/OceanEmbed_Model_PointwiseMLP_V1_B2.py",
+      "dst": "models/training/OceanEmbed_Model_PointwiseMLP_V1_B2.py",
+      "category": "model_training",
+      "reason": "B2 standalone MLP with self-test/train modes"
+    },
+    {
+      "id": "M034",
+      "src": "all_baselines/model_scripts/OceanEmbed_KaggleTrainer_B6_ConvLSTM_15Epoch_LatestOnlyResume_BestRestore.py",
+      "dst": "models/training/OceanEmbed_KaggleTrainer_B6_ConvLSTM_15Epoch_LatestOnlyResume_BestRestore.py",
+      "category": "model_training",
+      "reason": "B6 ConvLSTM Kaggle trainer (main reference model)"
+    },
+    {
+      "id": "M035",
+      "src": "all_baselines/model_scripts/OceanEmbed_B9_RESUME_LATEST_MODEL_SAFE.py",
+      "dst": "models/training/OceanEmbed_B9_RESUME_LATEST_MODEL_SAFE.py",
+      "category": "model_training",
+      "reason": "B9 Multi-Scale Spatiotemporal trainer"
+    },
+    {
+      "id": "M036",
+      "src": "all_baselines/model_scripts/OceanEmbed_A2_4_FINAL_FAST_GPU.py",
+      "dst": "models/evaluation/OceanEmbed_A2_4_FINAL_FAST_GPU.py",
+      "category": "model_evaluation",
+      "reason": "A2.4 ablation study — modality observability"
+    },
+    {
+      "id": "M037",
+      "src": "all_baselines/model_scripts/OceanEmbed_A2_4_FINAL_FAST_GPU_FIXED.py",
+      "dst": "models/evaluation/OceanEmbed_A2_4_FINAL_FAST_GPU_FIXED.py",
+      "category": "model_evaluation",
+      "reason": "A2.4 ablation fixed version"
+    },
+    {
+      "id": "M038",
+      "src": "all_baselines/model_scripts/OceanEmbed_A2_4_Fixed_GPU.py",
+      "dst": "models/evaluation/OceanEmbed_A2_4_Fixed_GPU.py",
+      "category": "model_evaluation",
+      "reason": "A2.4 ablation earlier GPU version"
+    },
+    {
+      "id": "M039",
+      "src": "PAM_ConvLSTM/OceanEmbed_H1_B7_PAM_ConvLSTM.py",
+      "dst": "models/architectures/OceanEmbed_H1_B7_PAM_ConvLSTM.py",
+      "category": "model_architecture",
+      "reason": "B7 PAM-ConvLSTM architecture (original)"
+    },
+    {
+      "id": "M040",
+      "src": "PAM_ConvLSTM/OceanEmbed_H1_B7_PAM_ConvLSTM_FINAL.py",
+      "dst": "models/architectures/OceanEmbed_H1_B7_PAM_ConvLSTM_FINAL.py",
+      "category": "model_architecture",
+      "reason": "B7 PAM-ConvLSTM final with training loop"
+    },
+    {
+      "id": "M041",
+      "src": "PAM_ConvLSTM/OceanEmbed_H1_B7_PAM_ConvLSTM_fixed.py",
+      "dst": "models/architectures/OceanEmbed_H1_B7_PAM_ConvLSTM_fixed.py",
+      "category": "model_architecture",
+      "reason": "B7 PAM-ConvLSTM bug-fixed version"
+    },
+    {
+      "id": "M042",
+      "src": "PAM_ConvLSTM/OceanEmbed_H1_B7_PAM_ConvLSTM_FINAL_claude.py",
+      "dst": "models/architectures/OceanEmbed_H1_B7_PAM_ConvLSTM_FINAL_claude.py",
+      "category": "model_architecture",
+      "reason": "B7 PAM-ConvLSTM claude revision variant"
+    },
+    {
+      "id": "M043",
+      "src": "PAM_ConvLSTM/OceanEmbed_H1_B7_PAM_ConvLSTM_FINAL_before_warmstart.py",
+      "dst": "models/architectures/OceanEmbed_H1_B7_PAM_ConvLSTM_FINAL_before_warmstart.py",
+      "category": "model_architecture",
+      "reason": "B7 pre-warmstart snapshot"
+    },
+    {
+      "id": "M044",
+      "src": "MSAA_ConvLSTM/OceanEmbed_B8_MSAA_ConvLSTM_FINAL.py",
+      "dst": "models/architectures/OceanEmbed_B8_MSAA_ConvLSTM_FINAL.py",
+      "category": "model_architecture",
+      "reason": "B8 Multi-Scale Spatial Attention ConvLSTM"
+    },
+    {
+      "id": "M045",
+      "src": "glorys_new_architecture/OceanEmbed_B6_Native36_REAL_TRAIN_EXACT_SIH.py",
+      "dst": "models/training/OceanEmbed_B6_Native36_REAL_TRAIN_EXACT_SIH.py",
+      "category": "model_training",
+      "reason": "B6 Native-36 depth training"
+    },
+    {
+      "id": "M046",
+      "src": "glorys_new_architecture/OceanEmbed_B6_Native36_REAL_TRAIN_EXACT_SIH_FIXED.py",
+      "dst": "models/training/OceanEmbed_B6_Native36_REAL_TRAIN_EXACT_SIH_FIXED.py",
+      "category": "model_training",
+      "reason": "B6 Native-36 depth training fixed"
+    },
+    {
+      "id": "M047",
+      "src": "glorys_new_architecture/OceanEmbed_B6_Native36_RESUME_EPOCH2.py",
+      "dst": "models/training/OceanEmbed_B6_Native36_RESUME_EPOCH2.py",
+      "category": "model_training",
+      "reason": "B6 Native-36 resume from epoch 1"
+    },
+    {
+      "id": "M048",
+      "src": "glorys_new_architecture/OceanEmbed_B6_Native36_RESUME_EPOCH2_FIXED.py",
+      "dst": "models/training/OceanEmbed_B6_Native36_RESUME_EPOCH2_FIXED.py",
+      "category": "model_training",
+      "reason": "B6 Native-36 resume fixed"
+    },
+    {
+      "id": "M049",
+      "src": "glorys_new_architecture/OceanEmbed_Native36_Simple_Baseline_Kaggle.py",
+      "dst": "models/training/OceanEmbed_Native36_Simple_Baseline_Kaggle.py",
+      "category": "model_training",
+      "reason": "Simple CNN baseline on 36-depth GLORYS"
+    },
+    {
+      "id": "M050",
+      "src": "oceanembed-data/scripts/ccmp_full_acquisition.py",
+      "dst": "data_acquisition/downloaders/ccmp_full_acquisition.py",
+      "category": "data_acquisition",
+      "reason": "CCMP full acquisition (earlier version)"
+    },
+    {
+      "id": "M051",
+      "src": "oceanembed-data/scripts/ccmp_full_acquisition_v3_1.py",
+      "dst": "data_acquisition/downloaders/ccmp_full_acquisition_v3_1.py",
+      "category": "data_acquisition",
+      "reason": "CCMP V3.1 full acquisition via podaac-data-downloader"
+    },
+    {
+      "id": "M052",
+      "src": "oceanembed-data/scripts/ccmp_full_acquisition_v5_opendap.py",
+      "dst": "data_acquisition/downloaders/ccmp_full_acquisition_v5_opendap.py",
+      "category": "data_acquisition",
+      "reason": "CCMP V5 OPeNDAP acquisition"
+    },
+    {
+      "id": "M053",
+      "src": "oceanembed-data/scripts/glorys_aquisition.py",
+      "dst": "data_acquisition/downloaders/glorys_acquisition_v3.py",
+      "category": "data_acquisition",
+      "reason": "GLORYS V3 acquisition (renamed to fix typo)"
+    },
+    {
+      "id": "M054",
+      "src": "oceanembed-data/scripts/download_oscar_full.py",
+      "dst": "data_acquisition/downloaders/download_oscar_full.py",
+      "category": "data_acquisition",
+      "reason": "OSCAR full native download via earthaccess CMR"
+    },
+    {
+      "id": "M055",
+      "src": "oceanembed-data/scripts/download_oscar_v2_opendap.py",
+      "dst": "data_acquisition/downloaders/download_oscar_v2_opendap.py",
+      "category": "data_acquisition",
+      "reason": "OSCAR V2 OPeNDAP subset download"
+    },
+    {
+      "id": "M056",
+      "src": "oceanembed-data/scripts/audit_glorys_spatial.py",
+      "dst": "audits/datasets/audit_glorys_spatial.py",
+      "category": "audit",
+      "reason": "GLORYS spatial reduction audit"
+    },
+    {
+      "id": "M057",
+      "src": "oceanembed-data/scripts/ccmp_acquisition_test.py",
+      "dst": "audits/datasets/ccmp_acquisition_test.py",
+      "category": "audit",
+      "reason": "CCMP single-file acquisition test"
+    },
+    {
+      "id": "M058",
+      "src": "oceanembed-data/scripts/tests/audit_oscar_native.py",
+      "dst": "audits/datasets/audit_oscar_native.py",
+      "category": "audit",
+      "reason": "OSCAR native granule NetCDF structure audit"
+    },
+    {
+      "id": "M059",
+      "src": "oceanembed-data/scripts/tests/download_oscar_native_test.py",
+      "dst": "audits/datasets/download_oscar_native_test.py",
+      "category": "audit",
+      "reason": "OSCAR native granule download test"
+    },
+    {
+      "id": "M060",
+      "src": "oceanembed-data/scripts/tests/download_oscar_test.py",
+      "dst": "audits/datasets/download_oscar_test.py",
+      "category": "audit",
+      "reason": "OSCAR Harmony subset test"
+    },
+    {
+      "id": "M061",
+      "src": "oceanembed-data/scripts/tests/inspect_oscar_granule.py",
+      "dst": "audits/datasets/inspect_oscar_granule.py",
+      "category": "audit",
+      "reason": "Queries CMR for OSCAR granule metadata"
+    },
+    {
+      "id": "M062",
+      "src": "oceanembed-data/scripts/tests/test_amit.py",
+      "dst": "audits/datasets/test_amit.py",
+      "category": "audit",
+      "reason": "OISST acquisition test (2011)"
+    },
+    {
+      "id": "M063",
+      "src": "oceanembed-data/scripts/tests/test_audit_era5.py",
+      "dst": "audits/datasets/test_audit_era5.py",
+      "category": "audit",
+      "reason": "ERA5 NetCDF deep audit"
+    },
+    {
+      "id": "M064",
+      "src": "oceanembed-data/scripts/tests/test_duacs.py",
+      "dst": "audits/datasets/test_duacs.py",
+      "category": "audit",
+      "reason": "DUACS NetCDF audit"
+    },
+    {
+      "id": "M065",
+      "src": "oceanembed-data/scripts/tests/test_oisst.py",
+      "dst": "audits/datasets/test_oisst.py",
+      "category": "audit",
+      "reason": "Downloads 7-day OISST test slice"
+    },
+    {
+      "id": "M066",
+      "src": "oceanembed-data/scripts/tests/test_oscar_opendap.py",
+      "dst": "audits/datasets/test_oscar_opendap.py",
+      "category": "audit",
+      "reason": "OSCAR OPeNDAP spatial subsetting test"
+    }
+  ],
+  "retain": [
+    {
+      "path": "oceanembed-software/",
+      "reason": "Proper Python package with importable src layout — moving would break all imports"
+    },
+    {
+      "path": ".kilo/worktrees/",
+      "reason": "Git worktree — managed by git, do not touch"
+    },
+    {
+      "path": "oceanembed-data/raw/argo/audit_argo.py",
+      "reason": "Co-located with raw data it audits — leave in place"
+    },
+    {
+      "path": "oceanembed-data/raw/argo/audit_argo2.py",
+      "reason": "Co-located with raw data"
+    },
+    {
+      "path": "oceanembed-data/raw/argo/audit_quick.py",
+      "reason": "Co-located with raw data"
+    },
+    {
+      "path": "oceanembed-data/raw/argo/scan_argo.py",
+      "reason": "Co-located with raw data"
+    },
+    {
+      "path": "oceanembed-data/raw/audit_scripts/oceanembed_raw_source_audit.py",
+      "reason": "Co-located with raw data audit outputs"
+    },
+    {
+      "path": "all_baselines/B1_PointwiseLinear/",
+      "reason": "Training outputs only (model checkpoints, metrics) — no Python scripts"
+    },
+    {
+      "path": "all_baselines/B2_PointwiseMLP/",
+      "reason": "Training outputs only"
+    },
+    {
+      "path": "all_baselines/B3_CNN/",
+      "reason": "Training outputs only"
+    },
+    {
+      "path": "all_baselines/B6/OceanEmbed_A2_4_FINAL_FAST_GPU.py",
+      "reason": "Duplicate of all_baselines/model_scripts/ — canonical copy moved as M036"
+    },
+    {
+      "path": "all_baselines/B6/OceanEmbed_A2_4_FINAL_FAST_GPU_FIXED.py",
+      "reason": "Duplicate — canonical copy moved as M037"
+    },
+    {
+      "path": "all_baselines/B6/OceanEmbed_A2_4_Fixed_GPU.py",
+      "reason": "Duplicate — canonical copy moved as M038"
+    },
+    {
+      "path": "all_baselines/B6/OceanEmbed_KaggleTrainer_B6_ConvLSTM_15Epoch_LatestOnlyResume_BestRestore.py",
+      "reason": "Duplicate — canonical copy moved as M034"
+    },
+    {
+      "path": "all_baselines/B9/OceanEmbed_B9_RESUME_LATEST_MODEL_SAFE.py",
+      "reason": "Duplicate — canonical copy moved as M035"
+    },
+    {
+      "path": "B6/OceanEmbed_A2_4_FINAL_FAST_GPU.py",
+      "reason": "Root-level duplicate — canonical copy moved as M036"
+    },
+    {
+      "path": "B6/OceanEmbed_A2_4_FINAL_FAST_GPU_FIXED.py",
+      "reason": "Root-level duplicate — canonical copy moved as M037"
+    },
+    {
+      "path": "B6/OceanEmbed_A2_4_Fixed_GPU.py",
+      "reason": "Root-level duplicate — canonical copy moved as M038"
+    },
+    {
+      "path": "B6/OceanEmbed_KaggleTrainer_B6_ConvLSTM_15Epoch_LatestOnlyResume_BestRestore.py",
+      "reason": "Root-level duplicate — canonical copy moved as M034"
+    },
+    {
+      "path": "B9/OceanEmbed_B9_RESUME_LATEST_MODEL_SAFE.py",
+      "reason": "Root-level duplicate — canonical copy moved as M035"
+    },
+    {
+      "path": "model_scripts/",
+      "reason": "Root-level duplicate of all_baselines/model_scripts/ — canonical copies moved via M030-M038"
+    },
+    {
+      "path": "new_glorys_2/OceanEmbed_GLORYS_ACQUISITION_FULL_VERTICAL_V4_2_6_MULTIYEAR_CONFIGURABLE.py",
+      "reason": "Duplicate of new_glorys/ version — canonical copy moved as M010"
+    },
+    {
+      "path": "scripts_test/",
+      "reason": "All files are duplicates of either audits/ or argo/indexes/ — canonical copies moved via M013-M017 and M018-M026"
+    }
+  ]
+}
